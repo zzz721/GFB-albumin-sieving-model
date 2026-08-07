@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sd-albumin-sieving"
+version = "0.1.0"
+description = "Deterministic slit-diaphragm geometry and albumin sieving calculations."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "scipy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sd_albumin_sieving = ["data/*.csv"]
+"sd_albumin_sieving.visualization.manuscript.figure3_sd_sieving" = ["frozen_data/*.csv", "frozen_data/*.json"]
+"sd_albumin_sieving.visualization.supplementary.figureS12_sd_pore_shape" = ["frozen_data/*.csv"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110

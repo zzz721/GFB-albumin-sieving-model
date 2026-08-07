@@ -1,0 +1,8 @@
+{
+  "area_per_large_pore_nm2": 270.0,
+  "peclet": 0.0015714185159589442,
+  "integrated_lower_sieving": 0.1893594363184517,
+  "integrated_upper_sieving": 0.7644585069139763,
+  "integrated_midpoint_sieving": 0.47690897161621404,
+  "orientation_method": "lower=random 3D orientation, upper=best 3D orientation, final=midpoint of lower and upper S"
+}
