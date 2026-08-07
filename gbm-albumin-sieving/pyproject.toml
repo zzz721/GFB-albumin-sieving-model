@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gbm-albumin-sieving"
+version = "0.1.0"
+description = "Structure-resolved pore-network analysis and albumin sieving simulations for the glomerular basement membrane."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "alphashape",
+  "matplotlib",
+  "networkx",
+  "numpy",
+  "openpyxl",
+  "pandas",
+  "plotly",
+  "scikit-learn",
+  "scipy",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110

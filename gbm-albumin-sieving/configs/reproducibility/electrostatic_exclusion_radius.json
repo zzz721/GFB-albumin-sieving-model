@@ -1,0 +1,24 @@
+{
+  "experiment_id": "electrostatic_exclusion_radius_main",
+  "network_source": "main_5000_per_sample_type",
+  "network_regeneration": false,
+  "sample_types": ["AS", "WT"],
+  "networks_per_sample_type": 5000,
+  "solute_radii_nm": [3.55, 4.25],
+  "transport_random_seed": null,
+  "transport_note": "Phase 4 transport is deterministic and reuses the exact main-experiment networks and their recorded seeds.",
+  "bootstrap": {
+    "method": "thickness_stratified_with_replacement",
+    "repeats": 200,
+    "sample_size_per_draw": 1500,
+    "seed": 20260606,
+    "thickness_bin_width_nm": 20.0,
+    "error_bar": "SD"
+  },
+  "plot_thickness_jitter": {
+    "distribution": "normal",
+    "standard_deviation_nm": 0.35,
+    "seed": 20260615
+  },
+  "source_bootstrap_summary_sha256": "32DDE5C9E8E2220107D8BE934ED1F6988455BE3BA2D9E8C2A08C46A74BA09271"
+}

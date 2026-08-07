@@ -1,0 +1,47 @@
+{
+  "experiment_id": "main_5000_per_sample_type",
+  "sample_types": ["AS", "WT"],
+  "runs_per_sample_type": 5000,
+  "total_networks": 10000,
+  "global_seed_argument": null,
+  "effective_phase3_base_seed": 0,
+  "thickness_sampling_seed": null,
+  "thickness_reproducibility": {
+    "note": "The original thickness draw had no fixed seed; use the stored realized arrays.",
+    "AS_values": "main_5000_thickness_AS.json",
+    "WT_values": "main_5000_thickness_WT.json",
+    "AS_values_sha256": "8BBCF4417C972746015C62F6F3C17BF78545266E2F802FD86B17E6A31437FCFF",
+    "WT_values_sha256": "AA5B30D0AA3DEFA6866A296BDF4EE64234D3C47347D960CF8C9D9C0F49DDFCFE"
+  },
+  "phase3_seed_rule": "base_seed + run_index + sieving_retry_index*1000000 + (phase3_attempt_index-1)*100000",
+  "phase3_actual_seed_map": "main_5000_run_seeds.csv",
+  "no_exit_rng_seed_rule": "base_seed + run_index*1000003 + sum(ord(c) for c in sample_type)*1009",
+  "maximum_sieving_tries_including_first": 4,
+  "no_exit_retry_probability": 1.0,
+  "geometry": {
+    "base_edge_nm": 200.0,
+    "pore_placement_cell_nm": 50.0,
+    "throat_neighbor_nm": 30.0
+  },
+  "model_options": {
+    "wt_thickness_fit": "kde",
+    "as_thickness_fit": "kde",
+    "rho_sampling_scope": "run",
+    "pore_rho_mean_correction_rel_tol": "Infinity",
+    "pore_rho_mean_correction_scale_min": 0.5,
+    "pore_rho_mean_correction_scale_max": 2.0,
+    "throat_rho_mean_correction_rel_tol": "Infinity",
+    "throat_rho_mean_correction_scale_min": 0.5,
+    "throat_rho_mean_correction_scale_max": 2.0
+  },
+  "recorded_status": {
+    "AS_phase4_ok": 4984,
+    "AS_kept_abnormal": 16,
+    "WT_phase4_ok": 4993,
+    "WT_kept_abnormal": 7,
+    "AS_no_exit": 0,
+    "WT_no_exit": 1120
+  },
+  "original_seed_ledger_sha256": "F57E64BB518292353AA32C6EAE2816421C8ABEB31E1682AF835DE86226BD06E0",
+  "compact_seed_map_sha256": "9299460C06F9C188A665CFDA7FB068D1A58C9C94E822B845631989E0C27AC356"
+}

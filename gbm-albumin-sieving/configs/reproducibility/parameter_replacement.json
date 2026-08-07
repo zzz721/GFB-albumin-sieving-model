@@ -1,0 +1,43 @@
+{
+  "experiment_id": "parameter_replacement_n2000",
+  "base_seed": 20260719,
+  "sample_types_in_thickness_draw_order": ["AS", "WT"],
+  "samples_per_variant_per_sample_type": 2000,
+  "total_variants": 9,
+  "total_result_rows": 36000,
+  "variants": [
+    "baseline",
+    "as_to_wt_throat_radius_overall",
+    "as_to_wt_throat_density_overall",
+    "as_to_wt_throat_length_overall",
+    "as_to_wt_degree_overall",
+    "wt_to_as_throat_radius_overall",
+    "wt_to_as_throat_density_overall",
+    "wt_to_as_throat_length_overall",
+    "wt_to_as_degree_overall"
+  ],
+  "thickness_rng_seed": 20260719,
+  "network_seed_rules": {
+    "WT": "20260719 + run_index",
+    "AS": "20260719 + 1000000 + run_index"
+  },
+  "paired_design": "The same sample-type/run seed and fitted thickness are reused across all variants.",
+  "network_seed_ranges": {
+    "WT": [20260719, 20262718],
+    "AS": [21260719, 21262718]
+  },
+  "geometry": {
+    "base_edge_nm": 200.0,
+    "pore_placement_cell_nm": 50.0,
+    "throat_neighbor_nm": 30.0
+  },
+  "model_options": {
+    "wt_thickness_fit": "kde",
+    "as_thickness_fit": "kde",
+    "pore_radius_q4_spatial_bias": true,
+    "pore_radius_q4_bias_strength": 0.55,
+    "rho_sampling_scope": "run",
+    "solute_radius_nm": 3.55
+  },
+  "original_experiment_config_sha256": "0661725109AAC06E7D26F705D6605DD9FD9996C57A9E7C806ED6B11A03CCDE82"
+}
