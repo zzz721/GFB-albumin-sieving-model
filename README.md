@@ -29,15 +29,14 @@ asset [gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/rel
 `gbm-albumin-sieving/examples/demo_100/README.md` for instructions and expected
 outputs.
 
-## Manuscript calculations
+## Reproducibility and validation
 
-The manuscript-to-code map is in `MANUSCRIPT_RESULTS_MAP.md`. It records the
-input, command, and expected result for the main SD, GBM, electrostatic, and
-whole-GFB calculations. `VALIDATION_REPORT.md` records the completed local
-checks, `CHANGE_SUMMARY_ZH.md` explains this update in Chinese, and
-`NATURE_CODE_CHECKLIST.md` records the remaining submission tasks.
-
+Each package README gives the commands and expected outputs for its supplied
+example data. `VALIDATION_REPORT.md` summarizes the fresh-environment,
+numerical, flow-conservation, and public Release checks. Reproducibility inputs
+for the GBM ensemble calculations are versioned under
+`gbm-albumin-sieving/configs/reproducibility/`.
 
 ## License
 
-This software is released under the MIT License. See LICENSE.
+This software is released under the [MIT License](LICENSE).
