@@ -40,5 +40,4 @@ checks, `CHANGE_SUMMARY_ZH.md` explains this update in Chinese, and
 
 ## License
 
-A software license has not yet been selected. The authors must add a `LICENSE`
-file and update this section before manuscript submission.
+This software is released under the MIT License. See LICENSE.
