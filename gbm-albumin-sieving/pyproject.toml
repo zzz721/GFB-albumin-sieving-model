@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gbm-albumin-sieving"
-version = "0.1.0"
+version = "0.2.0"
 description = "Structure-resolved pore-network analysis and albumin sieving simulations for the glomerular basement membrane."
 readme = "README.md"
 requires-python = ">=3.10"

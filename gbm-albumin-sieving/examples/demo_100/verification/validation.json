@@ -1,0 +1,36 @@
+{
+  "n_networks": 100,
+  "n_calculations": 200,
+  "n_failures": 0,
+  "workers": 4,
+  "elapsed_seconds": 62.01944450000883,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "dependencies": {
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "pandas": "2.3.2",
+    "networkx": "3.6.1",
+    "openpyxl": "3.1.5",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2024.2",
+    "tzdata": "2024.1",
+    "et-xmlfile": "2.0.0",
+    "six": "1.16.0"
+  },
+  "checks": {
+    "sieving_matches": true,
+    "water_flow_matches": true,
+    "albumin_flow_matches": true,
+    "outlet_mixing_balance": true,
+    "water_flow_independent_of_exclusion_radius": true,
+    "fixed_hydrodynamic_radius_3p55_nm": true
+  },
+  "all_passed": true,
+  "tolerances": {
+    "relative": 1e-07,
+    "sieving_absolute": 1e-10,
+    "flow_absolute_m3_s": 1e-28
+  },
+  "scope": "Uses provided geometry and precomputed boundary/connectivity classifications. Checks saved manuscript-pool reference values and the network outlet-mixing balance; not a full validation of every internal-node conservation equation or the four-layer model."
+}

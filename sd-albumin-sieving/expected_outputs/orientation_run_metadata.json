@@ -1,0 +1,19 @@
+{
+  "spacing_observations": 25,
+  "width_grid_points": 101,
+  "random_orientations_per_width": 5000,
+  "deterministic_orientations": 270,
+  "theta_step_deg": 2.0,
+  "seed": 20260804,
+  "best_width_distribution": "normal",
+  "elapsed_seconds": 70.12115679999988,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.6",
+  "dependencies": {
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "pandas": "2.3.2",
+    "matplotlib": "3.10.6"
+  },
+  "upper_bound_scope": "maximum over the implemented deterministic and random sampled orientations, not a proof of the continuous global maximum"
+}

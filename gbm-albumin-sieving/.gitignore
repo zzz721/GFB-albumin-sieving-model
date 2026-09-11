@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Generated scientific outputs and local data
+data/
+outputs/
+results/
+artifacts/
+*.xlsx
+*.xls
+*.html
+*.log
+*.out
+
+# Keep deliberately small fixtures even when they use ignored formats.
+!tests/fixtures/**
+!examples/data/**
+!src/gbm_sieving/visualization/manuscript/**/frozen_data/**/*.xlsx
