@@ -106,6 +106,40 @@ albumin flow. The maximum absolute equation residual was
   copies from the upload candidate.
 - The clean candidate contains 113 files and is approximately 3.22 MiB before
   compression.
-- The current checks validate the supplied inputs and stated calculations. A
-  clean-environment installation by an unfamiliar colleague and the remaining
-  manuscript figure/source-data migration are still pending.
+- The current checks validate the supplied inputs and stated calculations. An
+  installation by an unfamiliar colleague and the remaining manuscript
+  figure/source-data migration are still pending.
+
+## Public GitHub and Release check
+
+The public `main` branch and Release `gbm-example-v1.0.0` were independently
+downloaded after publication. The tag points to the published `main` commit.
+The Release is public and contains one asset named `gbm-demo-100.zip`.
+
+- Public asset size: 112332505 bytes
+- Public asset SHA256:
+  `17a3ed7d05e0dcd029d29a1ac37acc791439d8e4b8328cf8e6631e949e0a871f`
+- ZIP entries: 512, including 500 input Excel files
+- Manifest: 50 WT and 50 AS networks
+- Input checksum mismatches: 0
+- Full public-asset demo: 200 calculations, 0 failures, 59.8 seconds
+- Full SD geometry: 101 width points, exact match to frozen tables, 63.8 seconds
+- SD lower/upper/midpoint outputs: exact match to expected values
+- GFB four-condition outputs: exact match to expected values; all conservation
+  checks passed
+- SD manuscript and supplementary plotting commands: both completed
+- GBM new-data path: raw pore/throat workbooks were reclassified and the
+  regenerated classifications produced a valid DD2006 transport result
+
+A new Windows virtual environment was created with Python 3.12.6. Environment
+creation took 7.2 seconds, exact dependency installation took 113.1 seconds,
+and installation of the three repository packages took 17.8 seconds, for a
+combined time of approximately 2 minutes 18 seconds. `pip check` reported no
+broken requirements. The test system used an Intel Core i9-13980HX processor
+and 15.63 GiB RAM; no GPU or non-standard hardware was required.
+
+The post-release public `main` audit also found 57 legacy tracked
+cache/generated output files and one unresolved Release-link placeholder in the
+GBM example README. These do not affect the numerical results. The prepared
+cleanup commit removes the 57 files, fixes the link, records the measured
+installation time, and documents the tested GBM new-data path.

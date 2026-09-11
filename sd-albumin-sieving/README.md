@@ -27,7 +27,9 @@ orientation maximum.
 - Tested on Windows 11 with Python 3.12.6.
 - No GPU or non-standard hardware is required.
 - Tested package versions are listed in `requirements-tested.txt`.
-- Fresh-environment installation time remains to be measured before submission.
+- A fresh Windows environment containing the exact dependencies and all three
+  repository packages was created in approximately 2 minutes 18 seconds on the
+  tested desktop. Download time and hardware affect this value.
 
 ```text
 python -m pip install -e .

@@ -4,13 +4,7 @@ The manuscript-review demonstration contains 50 WT and 50 AS synthetic GBM
 networks. 
 
 The data archive is distributed as the GitHub Release asset
-`gbm-demo-100.zip`; it is not committed to the Git repository because its size
-is approximately 107 MiB. Replace the placeholder below with the final Release
-asset URL after publication:
-
-```text
-https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gbm-example-v1.0.0/gbm-demo-100.zip
-```
+[gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gbm-example-v1.0.0/gbm-demo-100.zip); it is not committed to the Git repository because its size is approximately 107 MiB.
 
 After extracting the archive, follow its top-level `README.md`. The full demo
 runs 100 networks under both conditions, giving 200 calculations. The expected

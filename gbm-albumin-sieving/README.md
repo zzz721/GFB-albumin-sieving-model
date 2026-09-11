@@ -74,7 +74,9 @@ python -m pip install -e ".[dev]"
 
 The exact package versions tested on Windows 11 with Python 3.12.6 are listed
 in `requirements-tested.txt`. No GPU or non-standard hardware is required.
-Fresh-environment installation time remains to be measured before submission.
+A fresh Windows environment containing the exact dependencies and all three
+repository packages was created in approximately 2 minutes 18 seconds on the
+tested desktop. Download time and hardware affect this value.
 
 The principal user-facing entry points are:
 
@@ -84,11 +86,19 @@ python workflows/simulate_fitted_networks.py --help
 python workflows/run_existing_network_dd2006.py --help
 ```
 
-For one previously classified network, pass both radii explicitly:
+To use a new network, place `NAME_pores.xlsx` and `NAME_throats.xlsx` in
+`DATA/NAME`, generate the boundary and solvent-connectivity classifications,
+and then run the transport solver:
 
 ```text
+python src/gbm_sieving/simulation/transport/analyze_network.py --sample-name NAME --sample-dir DATA/NAME --output-dir DATA --solute-radius-nm 3.55 --no-html
 python workflows/run_existing_network_dd2006.py --sample-name NAME --sample-dir DATA/NAME --analysis-root DATA --output-dir outputs/example --solute-radius-nm 4.25 --hydrodynamic-radius-nm 3.55
 ```
+
+For one previously classified network, run only the second command and pass
+both radii explicitly. Use `--solute-radius-nm 3.55` for the steric condition;
+use `4.25` for the electrostatic effective-radius condition while retaining
+`--hydrodynamic-radius-nm 3.55`.
 
 This command expects the five input workbooks documented in the README inside
 the GBM demo archive. Geometry changes require consistent regeneration of the
