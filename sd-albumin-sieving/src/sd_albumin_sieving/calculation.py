@@ -244,7 +244,7 @@ def calculate(
     *,
     orientation_grid_csv: Path = DEFAULT_ORIENTATION_GRID_CSV,
     orientation_observed_csv: Path = DEFAULT_ORIENTATION_OBSERVED_CSV,
-    orientation_alpha_summary_csv: Path = DEFAULT_ORIENTATION_ALPHA_SUMMARY_CSV,
+    orientation_alpha_summary_csv: Path | None = None,
     reference_length_nm: float = REFERENCE_LENGTH_NM,
     ellipse_diameter_x_nm: float = ALBUMIN_ELLIPSE_DIAMETER_X_NM,
     ellipse_diameter_y_nm: float = ALBUMIN_ELLIPSE_DIAMETER_Y_NM,
@@ -313,8 +313,20 @@ def calculate(
     ]
 
     orientation_observed_rows = _read_float_rows(orientation_observed_csv)
+    orientation_by_width = {
+        round(float(row["spacing_nm"]), 9): row for row in orientation_observed_rows
+    }
+    if len(orientation_by_width) != len(orientation_observed_rows):
+        raise ValueError("Orientation table contains duplicate spacing_nm values")
     observed_rows: list[dict[str, object]] = []
-    for row, orientation_row in zip(observations, orientation_observed_rows):
+    for row in observations:
+        key = round(float(row["sd_spacing_nm"]), 9)
+        if key not in orientation_by_width:
+            raise ValueError(
+                f"No orientation result for SD spacing {row['sd_spacing_nm']} nm. "
+                "Regenerate the orientation tables for the new width data before calculating sieving."
+            )
+        orientation_row = orientation_by_width[key]
         low_aeff = float(orientation_row["aeff_3d_random_mean_nm2"])
         high_aeff = float(orientation_row["aeff_3d_best_nm2"])
         mid_aeff = 0.5 * (low_aeff + high_aeff)
@@ -339,12 +351,6 @@ def calculate(
 
     integrated_lower_aeff = _weighted_average(grid, lower_aeff, density)
     integrated_upper_aeff = _weighted_average(grid, upper_aeff, density)
-    for row in _read_csv_rows(orientation_alpha_summary_csv):
-        scenario = row.get("scenario", "")
-        if scenario == "lower_random_3d":
-            integrated_lower_aeff = float(row["integrated_aeff_nm2_normal"])
-        elif scenario == "upper_best_3d":
-            integrated_upper_aeff = float(row["integrated_aeff_nm2_normal"])
     integrated_midpoint_aeff = 0.5 * (integrated_lower_aeff + integrated_upper_aeff)
     integrated_lower_alpha = integrated_lower_aeff / area_per_large_pore_nm2
     integrated_upper_alpha = integrated_upper_aeff / area_per_large_pore_nm2
@@ -364,7 +370,10 @@ def calculate(
         "normal_fit_parameter_significant_digits": 10,
         "source_orientation_grid_csv": orientation_grid_csv.name,
         "source_orientation_observed_csv": orientation_observed_csv.name,
-        "source_orientation_alpha_summary_csv": orientation_alpha_summary_csv.name,
+        "source_orientation_alpha_summary_csv": (
+            orientation_alpha_summary_csv.name if orientation_alpha_summary_csv is not None else None
+        ),
+        "orientation_summary_usage": "provenance only; integrated areas are recomputed from the supplied grid",
         "albumin_ellipse_diameter_x_nm": ellipse_diameter_x_nm,
         "albumin_ellipse_diameter_y_nm": ellipse_diameter_y_nm,
         "large_pore_count_per_complex": large_pore_count,
@@ -417,7 +426,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--orientation-alpha-summary-csv",
         type=Path,
-        default=DEFAULT_ORIENTATION_ALPHA_SUMMARY_CSV,
+        default=None,
+        help="Optional provenance record only; it never overrides a newly integrated grid.",
     )
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_ROOT / "sd_sieving")
     parser.add_argument("--theta-step-deg", type=float, default=THETA_STEP_DEG)

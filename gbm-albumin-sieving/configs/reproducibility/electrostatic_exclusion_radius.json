@@ -5,6 +5,9 @@
   "sample_types": ["AS", "WT"],
   "networks_per_sample_type": 5000,
   "solute_radii_nm": [3.55, 4.25],
+  "radius_role": "exclusion radius used for accessibility and Phi",
+  "hydrodynamic_radius_nm": 3.55,
+  "hydrodynamic_radius_role": "fixed hydrated radius used for DD2006 K_D and K_C",
   "transport_random_seed": null,
   "transport_note": "Phase 4 transport is deterministic and reuses the exact main-experiment networks and their recorded seeds.",
   "bootstrap": {

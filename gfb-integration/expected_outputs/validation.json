@@ -1,0 +1,11 @@
+{
+  "n_conditions": 4,
+  "max_abs_equation_residual": 1.3877787807814457e-17,
+  "shared_q_water_columns_equal": true,
+  "shared_q_albumin_columns_equal": true,
+  "elapsed_seconds": 0.0063489000021945685,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.6",
+  "scope": "Checks the serial model equations and identical total water/albumin flow columns. GBM and SD coefficients are effective layer inputs, not independently recalculated here.",
+  "all_passed": true
+}

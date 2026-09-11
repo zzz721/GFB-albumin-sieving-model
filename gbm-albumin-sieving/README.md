@@ -4,9 +4,9 @@ This project contains the analysis and simulation code for converting reconstruc
 glomerular basement membrane (GBM) pore-throat networks into structure-resolved
 predictions of solvent flow and albumin sieving.
 
-The repository is being assembled as a clean copy of the working research code.
-The original `analyze_and_calculate_2` and `gbm_full_model` directories remain
-unchanged and are not runtime dependencies of this project.
+The package contains the reviewed source code and small reproducibility records.
+The complete 5,000-network-per-group manuscript pool is not committed; the
+standalone 100-network demonstration is distributed separately.
 
 ## Code organization
 
@@ -15,7 +15,6 @@ unchanged and are not runtime dependencies of this project.
 - `src/gbm_sieving/simulation`: synthetic-network generation, transport, electrostatic
   exclusion effective-radius analysis, and parameter-replacement experiments.
 - `src/gbm_sieving/data_io`: result schemas, unit-safe readers/writers, naming, and aggregation.
-- `src/gbm_sieving/visualization`: manuscript, supplementary, and diagnostic figures.
 - `workflows`: user-facing pipelines that connect the package modules.
 
 ## Naming policy
@@ -38,15 +37,25 @@ Internal calculations use SI units. Units are included in exported column names.
 Conversions are centralized in `gbm_sieving.data_io.units`; in particular,
 `1 nL/s = 1e-12 m^3/s`.
 
-## Albumin transport model
+## Albumin transport model used for the manuscript
 
-The cylindrical-throat solver uses the Dechadilok-Deen (2006) approximations as
-its hydrodynamic hindrance model. For each albumin-accessible throat, the code
-stores the DD diffusive hindrance factor as `K_D` and calculates
-`D_eff = D0 * K_D`; this `K_D` is the reciprocal form of a drag-enhancement
-factor. The albumin advective velocity is `v_alb = K_C * v_water`, and steric
-exclusion is represented by the albumin-center accessible area
-`A_eff = pi * (r_throat - r_albumin)^2`.
+The manuscript solver is
+`gbm_sieving.simulation.transport.dd2006_conservative_solver`. It separates the
+radius used for geometric/electrostatic exclusion from the physical hydrated
+radius used for hydrodynamic hindrance. The exclusion radius controls throat
+accessibility and `Phi`; the hydrodynamic radius controls the Dechadilok-Deen
+(2006) `K_D` and `K_C` factors. Diffusion therefore uses
+`D0 * Phi * K_D * A/L`, and advection uses `Phi * K_C * Q_water`.
+
+| Condition | Exclusion radius | Hydrodynamic radius for `K_D`, `K_C` |
+|---|---:|---:|
+| Steric only | 3.55 nm | 3.55 nm |
+| Electrostatic effective-radius approximation | 4.25 nm | 3.55 nm |
+
+The electrostatic-radius workflow now calls this solver and passes both values
+explicitly. The older `sieving_solver.py` remains for historical workflow
+comparison; it is not used to reproduce the final electrostatic manuscript
+results.
 
 Every standard concentration solve enables final low-connectivity cluster pruning
 by default. Internal abnormal clusters are identified using `C < 1e-6` or
@@ -63,22 +72,45 @@ See `docs/FILE_GUIDE.md` for a description of every file.
 python -m pip install -e ".[dev]"
 ```
 
-The two user-facing entry points are:
+The exact package versions tested on Windows 11 with Python 3.12.6 are listed
+in `requirements-tested.txt`. No GPU or non-standard hardware is required.
+Fresh-environment installation time remains to be measured before submission.
+
+The principal user-facing entry points are:
 
 ```text
 python workflows/analyze_real_networks.py --help
 python workflows/simulate_fitted_networks.py --help
+python workflows/run_existing_network_dd2006.py --help
 ```
 
-Input defaults may reuse data in the parent research workspace. All new default
+For one previously classified network, pass both radii explicitly:
+
+```text
+python workflows/run_existing_network_dd2006.py --sample-name NAME --sample-dir DATA/NAME --analysis-root DATA --output-dir outputs/example --solute-radius-nm 4.25 --hydrodynamic-radius-nm 3.55
+```
+
+This command expects the five input workbooks documented in the README inside
+the GBM demo archive. Geometry changes require consistent regeneration of the
+boundary and solvent-connectivity classifications.
+
+Research-scale workflows require external input data; inspect each workflow's
+`--help` output and pass the corresponding input paths. All default generated
 outputs are written below `outputs/`, which is excluded from Git.
 
 Random seeds and small realized inputs for the principal 5,000-run, electrostatic
 exclusion-radius, and parameter-replacement experiments are versioned under
 `configs/reproducibility/`.
 
-The current main-text figure whitelist, frozen inputs, commands, and approved PNG
-hashes are documented in `src/gbm_sieving/visualization/manuscript/README.md`.
+The repository-level manuscript map records which final figure inputs and
+plotting workflows still need to be migrated.
 
-The cleaned first-stage workflow intentionally excludes the old iterative validation
+The public real-network workflow excludes the earlier iterative validation
 solver and the separate whole-sample (`overall_*`) branch.
+
+## Demonstration data
+
+The 100-network review demonstration is described in `examples/demo_100/`.
+Because the compressed input archive is about 107 MiB, it is supplied as the
+GitHub Release asset `gbm-demo-100.zip`; the ordinary Git repository contains
+only its small manifest, aggregate comparison, and instructions.
