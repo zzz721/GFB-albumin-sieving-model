@@ -1,6 +1,6 @@
 # Validation report
 
-Validation date: 2026-09-11.
+Validation date: 2026-09-1.
 
 ## Test environment and installation
 
