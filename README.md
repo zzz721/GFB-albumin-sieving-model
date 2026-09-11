@@ -40,7 +40,7 @@ checks, `CHANGE_SUMMARY_ZH.md` explains this update in Chinese, and
 
 The electrostatic effective-radius approximation uses 4.25 nm only for
 accessibility and the partition factor. The physical hydrated radius used for
-DD2006 `K_D` and `K_C` remains 3.55 nm.
+ `K_D` and `K_C` remains 3.55 nm.
 
 The serial GFB model uses a common `Q_water` and a common `Q_albumin` through
 all layers. Layer transfer ratios are reported after solving this conserved-flow
