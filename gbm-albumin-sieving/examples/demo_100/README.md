@@ -19,5 +19,3 @@ flow-weighted integrated sieving coefficients are:
 
 `manifest.csv` lists the network identifiers in the demonstration, and
 `population_comparison.csv` records the demo and complete-ensemble aggregates.
-The detailed curation procedure is retained in the authors' local audit and is
-not part of this software-use README.

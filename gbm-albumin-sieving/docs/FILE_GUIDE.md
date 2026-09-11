@@ -68,8 +68,7 @@ has not yet been migrated are not part of this package.
 - `workflows/run_existing_network_dd2006.py` runs the final transport solver on
   one previously classified network and is the smallest public GBM entry point.
 
-The current package does not claim one-command reproduction of every manuscript
-figure. The repository-level `MANUSCRIPT_RESULTS_MAP.md` lists which figure
-inputs and plotting workflows remain to be migrated before that optional scope
-can be claimed.
+The package README and reproducibility configurations document the supplied
+GBM calculations. Research-scale ensemble runs require the corresponding
+external network data and user-selected output paths.
 
