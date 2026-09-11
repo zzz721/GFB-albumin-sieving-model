@@ -37,6 +37,7 @@ whole-GFB calculations. `VALIDATION_REPORT.md` records the completed local
 checks, `CHANGE_SUMMARY_ZH.md` explains this update in Chinese, and
 `NATURE_CODE_CHECKLIST.md` records the remaining submission tasks.
 
+
 ## License
 
 A software license has not yet been selected. The authors must add a `LICENSE`
