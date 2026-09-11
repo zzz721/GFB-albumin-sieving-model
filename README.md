@@ -25,10 +25,9 @@ python workflows/run_gfb_model.py
 ```
 
 The GBM software demonstration is provided separately as the GitHub Release
-asset `gbm-demo-100.zip` because the archive is about 107 MiB. It contains 50 WT
-and 50 AS networks and verifies both exclusion-radius conditions. See
-`gbm-albumin-sieving/examples/demo_100/README.md`; replace its Release URL
-placeholder after the release is published.
+asset [gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gbm-example-v1.0.0/gbm-demo-100.zip). It contains 50 WT and 50 AS networks and verifies both exclusion-radius conditions. See
+`gbm-albumin-sieving/examples/demo_100/README.md` for instructions and expected
+outputs.
 
 ## Manuscript calculations
 
@@ -38,13 +37,6 @@ whole-GFB calculations. `VALIDATION_REPORT.md` records the completed local
 checks, `CHANGE_SUMMARY_ZH.md` explains this update in Chinese, and
 `NATURE_CODE_CHECKLIST.md` records the remaining submission tasks.
 
-The electrostatic effective-radius approximation uses 4.25 nm only for
-accessibility and the partition factor. The physical hydrated radius used for
- `K_D` and `K_C` remains 3.55 nm.
-
-The serial GFB model uses a common `Q_water` and a common `Q_albumin` through
-all layers. Layer transfer ratios are reported after solving this conserved-flow
-system.
 
 ## License
 
