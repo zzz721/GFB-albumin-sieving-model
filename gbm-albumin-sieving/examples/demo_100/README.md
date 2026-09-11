@@ -1,8 +1,7 @@
 # GBM 100-network demonstration
 
 The manuscript-review demonstration contains 50 WT and 50 AS synthetic GBM
-networks. Each network is evaluated with exclusion radii of 3.55 and 4.25 nm
-while the hydrodynamic radius used for DD2006 `K_D` and `K_C` remains 3.55 nm.
+networks. 
 
 The data archive is distributed as the GitHub Release asset
 `gbm-demo-100.zip`; it is not committed to the Git repository because its size
@@ -10,7 +9,7 @@ is approximately 107 MiB. Replace the placeholder below with the final Release
 asset URL after publication:
 
 ```text
-RELEASE_ASSET_URL_TO_BE_ADDED
+Download the demonstration archive: [gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gbm-example-v1.0.0/gbm-demo-100.zip)
 ```
 
 After extracting the archive, follow its top-level `README.md`. The full demo
