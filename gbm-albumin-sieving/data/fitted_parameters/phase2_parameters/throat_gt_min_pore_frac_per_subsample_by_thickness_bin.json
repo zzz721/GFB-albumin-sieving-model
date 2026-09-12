@@ -1,0 +1,2114 @@
+{
+  "overlap_tol_nm": 0.2,
+  "metric": "per sub-sample fraction of throats with r_throat > min(r_pore1,r_pore2)",
+  "overlap": {
+    "WT": {
+      "mean": 0.22755388531974263,
+      "std": 0.044538767602016374,
+      "median": 0.22128556375131717,
+      "min": 0.125,
+      "max": 0.4642857142857143,
+      "n_subsamples": 191,
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n_subsamples": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.23586764981954028,
+            "std": 0.05931978114736497,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.23586764981954028,
+                0.05931978114736497
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.23586764981954028,
+              0.05931978114736497
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n_subsamples": 42,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 42,
+            "mean": 0.23174365733422653,
+            "std": 0.04166106936800781,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.23174365733422653,
+                0.04166106936800781
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.23174365733422653,
+              0.04166106936800781
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n_subsamples": 64,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 64,
+            "mean": 0.22506407737670991,
+            "std": 0.04786918734537237,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.22506407737670991,
+                0.04786918734537237
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.22506407737670991,
+              0.04786918734537237
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n_subsamples": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.22110657433511088,
+            "std": 0.023473545438230162,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.22110657433511088,
+                0.023473545438230162
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.22110657433511088,
+              0.023473545438230162
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ],
+      "description": "Across sub-samples: fraction of overlap throats with r_throat > min(r_pore1,r_pore2)"
+    },
+    "AS": {
+      "mean": 0.2266254250452153,
+      "std": 0.049308023945713514,
+      "median": 0.22700074794315633,
+      "min": 0.0,
+      "max": 0.4838709677419355,
+      "n_subsamples": 301,
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n_subsamples": 40,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.21507354569911316,
+            "std": 0.07382345012311155,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.21507354569911316,
+                0.07382345012311155
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "throat_gt_min_pore_fraction_overlap",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1368
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 594
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 38
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.21507354569911316,
+              0.07382345012311155
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 40,
+            "mean": 0.2083478026744169,
+            "std": 0.08120399942112368,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.2083478026744169,
+                0.08120399942112368
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "throat_gt_min_pore_fraction_overlap",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1368
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 594
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 38
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n_subsamples": 79,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 79,
+            "mean": 0.2361244711786922,
+            "std": 0.05532238387893345,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.2361244711786922,
+                0.05532238387893345
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.2361244711786922,
+              0.05532238387893345
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n_subsamples": 62,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 62,
+            "mean": 0.21675065382064634,
+            "std": 0.04115835422770362,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.21675065382064634,
+                0.04115835422770362
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.21675065382064634,
+              0.04115835422770362
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n_subsamples": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.22779219579944307,
+            "std": 0.032785854833810926,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.22779219579944307,
+                0.032785854833810926
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.22779219579944307,
+              0.032785854833810926
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n_subsamples": 20,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 20,
+            "mean": 0.23028917359264311,
+            "std": 0.032870576411941035,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.23028917359264311,
+                0.032870576411941035
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.23028917359264311,
+              0.032870576411941035
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n_subsamples": 8,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.225317377705296,
+            "std": 0.02561943332160381,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.225317377705296,
+                0.02561943332160381
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "throat_gt_min_pore_fraction_overlap",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 6
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 24
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 93
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 295
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 600
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 794
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 188
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.225317377705296,
+              0.02561943332160381
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 8,
+            "mean": 0.22220504851624273,
+            "std": 0.008232301630415313,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.22220504851624273,
+                0.008232301630415313
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "throat_gt_min_pore_fraction_overlap",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 6
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 24
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 93
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 295
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 600
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 794
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 188
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n_subsamples": 7,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.22608753413375277,
+            "std": 0.021582970373294333,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.22608753413375277,
+                0.021582970373294333
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "throat_gt_min_pore_fraction_overlap",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -120.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.0001534774687552139,
+                  "n_raw": 40,
+                  "n_draw": 1
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 3
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 25
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 140
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 394
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 908
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 529
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.22608753413375277,
+              0.021582970373294333
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 7,
+            "mean": 0.2200829130533505,
+            "std": 0.010707355568579241,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.2200829130533505,
+                0.010707355568579241
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "throat_gt_min_pore_fraction_overlap",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -120.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.0001534774687552139,
+                "n_raw": 40,
+                "n_draw": 1
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 3
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 25
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 140
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 394
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 908
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 529
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n_subsamples": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.24172625628076114,
+            "std": 0.01673035457740246,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.24172625628076114,
+                0.01673035457740246
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.24172625628076114,
+              0.01673035457740246
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ],
+      "description": "Across sub-samples: fraction of overlap throats with r_throat > min(r_pore1,r_pore2)"
+    }
+  },
+  "nonoverlap": {
+    "WT": {
+      "mean": 0.022161645697606046,
+      "std": 0.008490461364207964,
+      "median": 0.022030651340996167,
+      "min": 0.0,
+      "max": 0.09090909090909091,
+      "n_subsamples": 191,
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n_subsamples": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.02249733549568076,
+            "std": 0.01364628794536476,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.02249733549568076,
+                0.01364628794536476
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.02249733549568076,
+              0.01364628794536476
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n_subsamples": 42,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 42,
+            "mean": 0.021516631869204182,
+            "std": 0.008172164326422699,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.021516631869204182,
+                0.008172164326422699
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.021516631869204182,
+              0.008172164326422699
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n_subsamples": 64,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 64,
+            "mean": 0.02231749361186006,
+            "std": 0.006323441370794536,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.02231749361186006,
+                0.006323441370794536
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.02231749361186006,
+              0.006323441370794536
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n_subsamples": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.022264328994543416,
+            "std": 0.005850508170986198,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.022264328994543416,
+                0.005850508170986198
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.022264328994543416,
+              0.005850508170986198
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ],
+      "description": "Across sub-samples: fraction of nonoverlap throats with r_throat > min(r_pore1,r_pore2)"
+    },
+    "AS": {
+      "mean": 0.024954908765926324,
+      "std": 0.014192975854661196,
+      "median": 0.02213393870601589,
+      "min": 0.0,
+      "max": 0.12121212121212122,
+      "n_subsamples": 301,
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n_subsamples": 40,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.029938480339009435,
+            "std": 0.020508541900245897,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.029938480339009435,
+                0.020508541900245897
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "throat_gt_min_pore_fraction_nonoverlap",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1411
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 560
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 29
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.029938480339009435,
+              0.020508541900245897
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 40,
+            "mean": 0.029596916611025915,
+            "std": 0.02488902720762218,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.029596916611025915,
+                0.02488902720762218
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "throat_gt_min_pore_fraction_nonoverlap",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1411
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 560
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 29
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n_subsamples": 79,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 79,
+            "mean": 0.027393058739182723,
+            "std": 0.015493012352556877,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.027393058739182723,
+                0.015493012352556877
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.027393058739182723,
+              0.015493012352556877
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n_subsamples": 62,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 62,
+            "mean": 0.02255427622712528,
+            "std": 0.008443952522204659,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.02255427622712528,
+                0.008443952522204659
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.02255427622712528,
+              0.008443952522204659
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n_subsamples": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.02306028227799294,
+            "std": 0.011644207355379643,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.02306028227799294,
+                0.011644207355379643
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.02306028227799294,
+              0.011644207355379643
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n_subsamples": 20,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 20,
+            "mean": 0.022902302402691303,
+            "std": 0.011004888029546536,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.022902302402691303,
+                0.011004888029546536
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.022902302402691303,
+              0.011004888029546536
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n_subsamples": 8,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.022142522617861145,
+            "std": 0.007991947692830442,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.022142522617861145,
+                0.007991947692830442
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "throat_gt_min_pore_fraction_nonoverlap",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 4
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 18
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 126
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 296
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 577
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 800
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 179
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.022142522617861145,
+              0.007991947692830442
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 8,
+            "mean": 0.021500040507624222,
+            "std": 0.0036542448862547463,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.021500040507624222,
+                0.0036542448862547463
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "throat_gt_min_pore_fraction_nonoverlap",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 4
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 18
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 126
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 296
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 577
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 800
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 179
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n_subsamples": 7,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.020883172309534962,
+            "std": 0.0061488693827558925,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.020883172309534962,
+                0.0061488693827558925
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "throat_gt_min_pore_fraction_nonoverlap",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -120.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.0001534774687552139,
+                  "n_raw": 40,
+                  "n_draw": 1
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 4
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 21
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 121
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 376
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 908
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 569
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.020883172309534962,
+              0.0061488693827558925
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 7,
+            "mean": 0.019390882117438193,
+            "std": 0.002454312521687411,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.019390882117438193,
+                0.002454312521687411
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "throat_gt_min_pore_fraction_nonoverlap",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -120.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.0001534774687552139,
+                "n_raw": 40,
+                "n_draw": 1
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 4
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 21
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 121
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 376
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 908
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 569
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n_subsamples": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.02414993691852897,
+            "std": 0.0051970249728442155,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.02414993691852897,
+                0.0051970249728442155
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.02414993691852897,
+              0.0051970249728442155
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ],
+      "description": "Across sub-samples: fraction of nonoverlap throats with r_throat > min(r_pore1,r_pore2)"
+    }
+  }
+}

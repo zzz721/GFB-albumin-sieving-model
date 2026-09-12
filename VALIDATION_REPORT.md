@@ -1,6 +1,6 @@
 # Validation report
 
-Validation date: 2026-09-1.
+Validation date: 2026-09-12.
 
 ## Test environment and installation
 
@@ -42,12 +42,31 @@ The public Release asset is:
 
 ```text
 gbm-demo-100.zip
-112332505 bytes
-SHA256 17a3ed7d05e0dcd029d29a1ac37acc791439d8e4b8328cf8e6631e949e0a871f
+112349728 bytes
+SHA256 27c2432d80551ce3732710c8c589e11bf1ba2dd111e48c36c62b221df43cc8c9
 ```
 
-The archive contains 512 ZIP entries, including 500 Excel input files. The ZIP
+The archive contains 515 ZIP entries, including 500 Excel input files. The ZIP
 integrity check passed, and all 500 hashes recorded in `checksums.json` matched.
+
+## GBM network-generation demonstration
+
+The source package includes the compact Phase 1 thickness fit and the 14 Phase
+2 structural-parameter files required by the synthetic-network workflow. The
+fixed-seed command in `gbm-albumin-sieving/examples/generation_2/README.md` was
+run without any external parameter path. It generated one AS and one WT
+network, classified both networks, and completed transport calculations in
+approximately 60 seconds. Both Phase 3 and Phase 4 statuses were `ok`, and both
+transport results were stable.
+
+| Group | Thickness (nm) | Pores | Throats | Sieving coefficient | Water flow (m3/s) |
+|---|---:|---:|---:|---:|---:|
+| AS | 65.17479789 | 7,936 | 27,373 | 0.0561576053 | 1.3209821357e-18 |
+| WT | 63.43114408 | 6,667 | 20,851 | 0.0246281969 | 7.1229887574e-19 |
+
+The run created 46 files, including the four new pore/throat workbooks and the
+per-network and aggregate sieving summaries. Its numeric outputs matched the
+versioned expected summary to floating-point precision.
 
 ## Slit-diaphragm calculation
 

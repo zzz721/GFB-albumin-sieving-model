@@ -1,0 +1,3 @@
+sample_type,sample_name,thickness_nm,n_pore,n_throat,Theta_default,Q_default_m3s,phase3_status,phase4_status,Stable
+AS,synthetic_AS_run0_plane,65.17479789083387,7936,27373,0.05615760527335235,1.320982135680884e-18,ok,ok,Yes
+WT,synthetic_WT_run0_plane,63.43114407608824,6667,20851,0.02462819689294138,7.122988757427332e-19,ok,ok,Yes

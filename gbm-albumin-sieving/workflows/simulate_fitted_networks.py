@@ -44,13 +44,16 @@ _root = PROJECT_ROOT
 
 
 def _default_fitted_parameter_dir(name: str) -> Path:
-    """Prefer project-local results, then the adjacent legacy data location."""
+    """Find fitted parameters, including the public package fallback."""
     local = PROJECT_ROOT / "results" / name
     legacy = PROJECT_ROOT.parent / "gbm_full_model" / "results" / name
+    packaged = PROJECT_ROOT / "data" / "fitted_parameters" / name
     if local.is_dir():
         return local
     if legacy.is_dir():
         return legacy
+    if packaged.is_dir():
+        return packaged
     return local
 BIN_WIDTH_NM = 10.0
 _PROGRESS_STREAM = sys.stdout

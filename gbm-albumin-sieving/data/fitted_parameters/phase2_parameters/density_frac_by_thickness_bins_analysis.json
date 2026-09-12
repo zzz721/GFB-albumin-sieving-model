@@ -1,0 +1,5879 @@
+{
+  "rho_pore": {
+    "WT": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n": 36,
+          "fit": {
+            "n": 36,
+            "mean": 0.00059720467322759,
+            "std": 5.197933842760337e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.00059720467322759,
+                    5.197933842760337e-05
+                  ],
+                  "aic": -604.0922520609327,
+                  "bic": -600.9252141840204,
+                  "ks_stat": 0.1880165888940229,
+                  "ks_pvalue": 0.13765305094866853
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.08614234464385963,
+                    0.0,
+                    0.0005949876035803106
+                  ],
+                  "aic": -603.104565682971,
+                  "bic": -598.3540088676027,
+                  "ks_stat": 0.19467122358483918,
+                  "ks_pvalue": 0.11386593248375565
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    134.5996408279154,
+                    0.0,
+                    4.436896484672731e-06
+                  ],
+                  "aic": -602.9720826696821,
+                  "bic": -598.2215258543138,
+                  "ks_stat": 0.1919097528014806,
+                  "ks_pvalue": 0.12329317501153203
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.00059720467322759
+                  ],
+                  "covariances": [
+                    1.0027018516233713e-06
+                  ],
+                  "aic": -427.000665634876,
+                  "bic": -423.83362775796377,
+                  "ks_stat": 0.4430510027262905,
+                  "ks_pvalue": 5.881907231827274e-07
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.00059720467322759,
+                5.197933842760337e-05
+              ],
+              "aic": -604.0922520609327,
+              "bic": -600.9252141840204,
+              "ks_stat": 0.1880165888940229,
+              "ks_pvalue": 0.13765305094866853
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.00059720467322759,
+              5.197933842760337e-05
+            ],
+            "aic": -604.0922520609327,
+            "bic": -600.9252141840204,
+            "ks_stat": 0.1880165888940229,
+            "ks_pvalue": 0.13765305094866853
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 42,
+          "fit": {
+            "n": 42,
+            "mean": 0.0006156886374339586,
+            "std": 9.648758445714181e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.15062945174914688,
+                    0.0,
+                    0.0006085877350867942
+                  ],
+                  "aic": -655.7825222534248,
+                  "bic": -650.5695133985746,
+                  "ks_stat": 0.16365680692004458,
+                  "ks_pvalue": 0.1885086234873683
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0006156886374339586,
+                    9.648758445714181e-05
+                  ],
+                  "aic": -653.4812453860353,
+                  "bic": -650.0059061494686,
+                  "ks_stat": 0.19178647042682806,
+                  "ks_pvalue": 0.07928924776663127
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    43.26837995167742,
+                    0.0,
+                    1.4229528309623935e-05
+                  ],
+                  "aic": -654.6843773249981,
+                  "bic": -649.4713684701479,
+                  "ks_stat": 0.17346140498806173,
+                  "ks_pvalue": 0.14162094644438306
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0006156886374339585
+                  ],
+                  "covariances": [
+                    1.0093098539543741e-06
+                  ],
+                  "aic": -498.283994539697,
+                  "bic": -494.80865530313025,
+                  "ks_stat": 0.4313537026305463,
+                  "ks_pvalue": 1.2843467551219506e-07
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.15062945174914688,
+                0.0,
+                0.0006085877350867942
+              ],
+              "aic": -655.7825222534248,
+              "bic": -650.5695133985746,
+              "ks_stat": 0.16365680692004458,
+              "ks_pvalue": 0.1885086234873683
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.15062945174914688,
+              0.0,
+              0.0006085877350867942
+            ],
+            "aic": -655.7825222534248,
+            "bic": -650.5695133985746,
+            "ks_stat": 0.16365680692004458,
+            "ks_pvalue": 0.1885086234873683
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 64,
+          "fit": {
+            "n": 64,
+            "mean": 0.0005947782012408367,
+            "std": 8.468709880816541e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.13683439487355514,
+                    0.0,
+                    0.0005891099481641093
+                  ],
+                  "aic": -1018.8887129856987,
+                  "bic": -1012.4120637356197,
+                  "ks_stat": 0.1497819592706765,
+                  "ks_pvalue": 0.10194009645840385
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    52.38147451746142,
+                    0.0,
+                    1.1354743384372787e-05
+                  ],
+                  "aic": -1017.2389087599103,
+                  "bic": -1010.7622595098312,
+                  "ks_stat": 0.15747369948310186,
+                  "ks_pvalue": 0.07478049790712671
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005947782012408367,
+                    8.468709880816541e-05
+                  ],
+                  "aic": -1014.573920130222,
+                  "bic": -1010.2561539635026,
+                  "ks_stat": 0.1742195122098733,
+                  "ks_pvalue": 0.03608305700530845
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0005947782012408366
+                  ],
+                  "covariances": [
+                    1.007171904704544e-06
+                  ],
+                  "aic": -761.655446265287,
+                  "bic": -757.3376800985676,
+                  "ks_stat": 0.4346251170235661,
+                  "ks_pvalue": 1.6435490042844997e-11
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.13683439487355514,
+                0.0,
+                0.0005891099481641093
+              ],
+              "aic": -1018.8887129856987,
+              "bic": -1012.4120637356197,
+              "ks_stat": 0.1497819592706765,
+              "ks_pvalue": 0.10194009645840385
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.13683439487355514,
+              0.0,
+              0.0005891099481641093
+            ],
+            "aic": -1018.8887129856987,
+            "bic": -1012.4120637356197,
+            "ks_stat": 0.1497819592706765,
+            "ks_pvalue": 0.10194009645840385
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n": 49,
+          "fit": {
+            "n": 49,
+            "mean": 0.0005930423695112174,
+            "std": 3.9518046436625605e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005930423695112174,
+                    3.9518046436625605e-05
+                  ],
+                  "aic": -850.5418293665902,
+                  "bic": -846.7581887703689,
+                  "ks_stat": 0.11246441404722396,
+                  "ks_pvalue": 0.5282254705253011
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    216.9784240516245,
+                    0.0,
+                    2.7331859013323744e-06
+                  ],
+                  "aic": -846.8688297985035,
+                  "bic": -841.1933689041716,
+                  "ks_stat": 0.11876575839799153,
+                  "ks_pvalue": 0.4590655174852215
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.06861115428803655,
+                    0.0,
+                    0.0005916763026285499
+                  ],
+                  "aic": -845.9054234354452,
+                  "bic": -840.2299625411133,
+                  "ks_stat": 0.12169354880902661,
+                  "ks_pvalue": 0.42857289414619826
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0005930423695112175
+                  ],
+                  "covariances": [
+                    1.0015616759941673e-06
+                  ],
+                  "aic": -582.7511758444394,
+                  "bic": -578.9675352482182,
+                  "ks_stat": 0.4671723776807266,
+                  "ks_pvalue": 2.530724227934937e-10
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0005930423695112174,
+                3.9518046436625605e-05
+              ],
+              "aic": -850.5418293665902,
+              "bic": -846.7581887703689,
+              "ks_stat": 0.11246441404722396,
+              "ks_pvalue": 0.5282254705253011
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0005930423695112174,
+              3.9518046436625605e-05
+            ],
+            "aic": -850.5418293665902,
+            "bic": -846.7581887703689,
+            "ks_stat": 0.11246441404722396,
+            "ks_pvalue": 0.5282254705253011
+          }
+        }
+      ]
+    },
+    "AS": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n": 40,
+          "fit": {
+            "n": 2000,
+            "mean": 0.000809888580287921,
+            "std": 0.00018748353614111724,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.22563270506559296,
+                    0.0,
+                    0.0007893743612381922
+                  ],
+                  "aic": -28850.712565829977,
+                  "bic": -28833.909858451352,
+                  "ks_stat": 0.020808206926732464,
+                  "ks_pvalue": 0.34716865087669624
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    19.653842158067835,
+                    0.0,
+                    4.120764651381229e-05
+                  ],
+                  "aic": -28817.95648461206,
+                  "bic": -28801.153777233434,
+                  "ks_stat": 0.03448362704187008,
+                  "ks_pvalue": 0.016788515568803074
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.000809888580287921,
+                    0.00018748353614111724
+                  ],
+                  "aic": -28647.523961807172,
+                  "bic": -28636.322156888087,
+                  "ks_stat": 0.06353491687981622,
+                  "ks_pvalue": 1.8392797023226758e-07
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0008098885802879209
+                  ],
+                  "covariances": [
+                    1.0351500763239776e-06
+                  ],
+                  "aic": -23814.261142812808,
+                  "bic": -23803.059337893723,
+                  "ks_stat": 0.3599957715066233,
+                  "ks_pvalue": 1.2861004190600836e-232
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.22563270506559296,
+                0.0,
+                0.0007893743612381922
+              ],
+              "aic": -28850.712565829977,
+              "bic": -28833.909858451352,
+              "ks_stat": 0.020808206926732464,
+              "ks_pvalue": 0.34716865087669624
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "rho_pore_density_frac_bin",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1354
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 595
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 50
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": 60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.00023295790634257618,
+                  "n_raw": 49,
+                  "n_draw": 1
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.22563270506559296,
+              0.0,
+              0.0007893743612381922
+            ],
+            "aic": -28850.712565829977,
+            "bic": -28833.909858451352,
+            "ks_stat": 0.020808206926732464,
+            "ks_pvalue": 0.34716865087669624
+          },
+          "fit_raw_before_smoothing": {
+            "n": 40,
+            "mean": 0.0008426356986448065,
+            "std": 0.00020667724094379714,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.23389034822185756,
+                    0.0,
+                    0.0008192529122178387
+                  ],
+                  "aic": -565.2865642594809,
+                  "bic": -560.2199258971391,
+                  "ks_stat": 0.11570111605603972,
+                  "ks_pvalue": 0.616493845992828
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    17.932199480263446,
+                    0.0,
+                    4.6990091738173504e-05
+                  ],
+                  "aic": -563.7748651271697,
+                  "bic": -558.7082267648279,
+                  "ks_stat": 0.11927437133032964,
+                  "ks_pvalue": 0.5785618952993123
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0008426356986448065,
+                    0.00020667724094379714
+                  ],
+                  "aic": -561.2330936672334,
+                  "bic": -557.8553347590056,
+                  "ks_stat": 0.1387824561883918,
+                  "ks_pvalue": 0.3884935338006268
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0008426356986448065
+                  ],
+                  "covariances": [
+                    1.0427154819241404e-06
+                  ],
+                  "aic": -471.79358100140007,
+                  "bic": -468.4158220931722,
+                  "ks_stat": 0.39697342845346717,
+                  "ks_pvalue": 3.381053889925984e-06
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.23389034822185756,
+                0.0,
+                0.0008192529122178387
+              ],
+              "aic": -565.2865642594809,
+              "bic": -560.2199258971391,
+              "ks_stat": 0.11570111605603972,
+              "ks_pvalue": 0.616493845992828
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "rho_pore_density_frac_bin",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1354
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 595
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 50
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": 60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.00023295790634257618,
+                "n_raw": 49,
+                "n_draw": 1
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n": 79,
+          "fit": {
+            "n": 79,
+            "mean": 0.0007501059017959654,
+            "std": 0.0001298778676671226,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0007501059017959654,
+                    0.0001298778676671226
+                  ],
+                  "aic": -1185.7364442692717,
+                  "bic": -1180.9975485643376,
+                  "ks_stat": 0.10447594091241436,
+                  "ks_pvalue": 0.33122041023400717
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    30.421667959447976,
+                    0.0,
+                    2.465696170229243e-05
+                  ],
+                  "aic": -1178.2072689321983,
+                  "bic": -1171.0989253747973,
+                  "ks_stat": 0.1104690319580284,
+                  "ks_pvalue": 0.2695668589389244
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.1895459898392008,
+                    0.0,
+                    0.0007378117504683907
+                  ],
+                  "aic": -1172.0490912781543,
+                  "bic": -1164.9407477207533,
+                  "ks_stat": 0.11926358367723885,
+                  "ks_pvalue": 0.19483527609882367
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0007501059017959654
+                  ],
+                  "covariances": [
+                    1.0168682605097586e-06
+                  ],
+                  "aic": -939.601080753431,
+                  "bic": -934.8621850484969,
+                  "ks_stat": 0.415798253428964,
+                  "ks_pvalue": 6.985640737287268e-13
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0007501059017959654,
+                0.0001298778676671226
+              ],
+              "aic": -1185.7364442692717,
+              "bic": -1180.9975485643376,
+              "ks_stat": 0.10447594091241436,
+              "ks_pvalue": 0.33122041023400717
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0007501059017959654,
+              0.0001298778676671226
+            ],
+            "aic": -1185.7364442692717,
+            "bic": -1180.9975485643376,
+            "ks_stat": 0.10447594091241436,
+            "ks_pvalue": 0.33122041023400717
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n": 62,
+          "fit": {
+            "n": 62,
+            "mean": 0.0006604338650096228,
+            "std": 9.365080574306493e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.13106114251108,
+                    0.0,
+                    0.0006545017835327344
+                  ],
+                  "aic": -979.1538412483415,
+                  "bic": -972.7724380932061,
+                  "ks_stat": 0.20727478078733474,
+                  "ks_pvalue": 0.008176118676661237
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    55.582071143753865,
+                    0.0,
+                    1.1882138456149277e-05
+                  ],
+                  "aic": -975.9100647140029,
+                  "bic": -969.5286615588677,
+                  "ks_stat": 0.21734674899438866,
+                  "ks_pvalue": 0.004734518613994432
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0006604338650096228,
+                    9.365080574306493e-05
+                  ],
+                  "aic": -970.2678750249222,
+                  "bic": -966.013606254832,
+                  "ks_stat": 0.23630552262737414,
+                  "ks_pvalue": 0.0015741725358925374
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0006604338650096228
+                  ],
+                  "covariances": [
+                    1.0087704734163253e-06
+                  ],
+                  "aic": -737.5328361296199,
+                  "bic": -733.2785673595297,
+                  "ks_stat": 0.4402962050951744,
+                  "ks_pvalue": 1.8382598021958837e-11
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.13106114251108,
+                0.0,
+                0.0006545017835327344
+              ],
+              "aic": -979.1538412483415,
+              "bic": -972.7724380932061,
+              "ks_stat": 0.20727478078733474,
+              "ks_pvalue": 0.008176118676661237
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.13106114251108,
+              0.0,
+              0.0006545017835327344
+            ],
+            "aic": -979.1538412483415,
+            "bic": -972.7724380932061,
+            "ks_stat": 0.20727478078733474,
+            "ks_pvalue": 0.008176118676661237
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 49,
+          "fit": {
+            "n": 49,
+            "mean": 0.0006302749211430867,
+            "std": 7.262975542633566e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.11005410172404519,
+                    0.0,
+                    0.0006263621537316746
+                  ],
+                  "aic": -794.015797082823,
+                  "bic": -788.3403361884912,
+                  "ks_stat": 0.15731187638809352,
+                  "ks_pvalue": 0.1587704324971313
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0006302749211430867,
+                    7.262975542633566e-05
+                  ],
+                  "aic": -790.8973385888186,
+                  "bic": -787.1136979925973,
+                  "ks_stat": 0.18202919291511432,
+                  "ks_pvalue": 0.06817017349360499
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    80.45687109239101,
+                    0.0,
+                    7.833699130796713e-06
+                  ],
+                  "aic": -792.5463808580784,
+                  "bic": -786.8709199637465,
+                  "ks_stat": 0.16548065212270469,
+                  "ks_pvalue": 0.12173838775574952
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0006302749211430867
+                  ],
+                  "covariances": [
+                    1.0052750813732894e-06
+                  ],
+                  "aic": -582.3891188152519,
+                  "bic": -578.6054782190306,
+                  "ks_stat": 0.43963598070791543,
+                  "ks_pvalue": 3.858648448090361e-09
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.11005410172404519,
+                0.0,
+                0.0006263621537316746
+              ],
+              "aic": -794.015797082823,
+              "bic": -788.3403361884912,
+              "ks_stat": 0.15731187638809352,
+              "ks_pvalue": 0.1587704324971313
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.11005410172404519,
+              0.0,
+              0.0006263621537316746
+            ],
+            "aic": -794.015797082823,
+            "bic": -788.3403361884912,
+            "ks_stat": 0.15731187638809352,
+            "ks_pvalue": 0.1587704324971313
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 20,
+          "fit": {
+            "n": 20,
+            "mean": 0.0006181952114237532,
+            "std": 6.391839797309882e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0006181952114237532,
+                    6.391839797309882e-05
+                  ],
+                  "aic": -325.55859146458977,
+                  "bic": -323.5671269174818,
+                  "ks_stat": 0.1330547821350775,
+                  "ks_pvalue": 0.8258002916678655
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.10011886904015597,
+                    0.0,
+                    0.0006150437361215086
+                  ],
+                  "aic": -325.0510300945002,
+                  "bic": -322.06383327383827,
+                  "ks_stat": 0.11389802564434715,
+                  "ks_pvalue": 0.9317654536641669
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    97.99645714776281,
+                    0.0,
+                    6.3083424586627125e-06
+                  ],
+                  "aic": -324.6257430847323,
+                  "bic": -321.6385462640703,
+                  "ks_stat": 0.12045770595187444,
+                  "ks_pvalue": 0.9007755012195852
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0006181952114237531
+                  ],
+                  "covariances": [
+                    1.0040855615994474e-06
+                  ],
+                  "aic": -235.38974630992152,
+                  "bic": -233.39828176281353,
+                  "ks_stat": 0.4584887141317719,
+                  "ks_pvalue": 0.00022981137418849468
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.10011886904015597,
+                0.0,
+                0.0006150437361215086
+              ],
+              "aic": -325.0510300945002,
+              "bic": -322.06383327383827,
+              "ks_stat": 0.11389802564434715,
+              "ks_pvalue": 0.9317654536641669
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.10011886904015597,
+              0.0,
+              0.0006150437361215086
+            ],
+            "aic": -325.0510300945002,
+            "bic": -322.06383327383827,
+            "ks_stat": 0.11389802564434715,
+            "ks_pvalue": 0.9317654536641669
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n": 8,
+          "fit": {
+            "n": 2000,
+            "mean": 0.0006059598165332545,
+            "std": 6.599661596566545e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.10530423627589611,
+                    0.0,
+                    0.0006025480075474788
+                  ],
+                  "aic": -32979.225248414004,
+                  "bic": -32962.422541035376,
+                  "ks_stat": 0.09313439905612098,
+                  "ks_pvalue": 1.5072474645355953e-15
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    88.71942011337809,
+                    0.0,
+                    6.830069625780627e-06
+                  ],
+                  "aic": -32939.0620791245,
+                  "bic": -32922.25937174587,
+                  "ks_stat": 0.10052257290891409,
+                  "ks_pvalue": 4.790162723177382e-18
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0006059598165332545,
+                    6.599661596566545e-05
+                  ],
+                  "aic": -32823.87422918075,
+                  "bic": -32812.67242426167,
+                  "ks_stat": 0.11573200017399865,
+                  "ks_pvalue": 8.563532393017403e-24
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0006059598165332545
+                  ],
+                  "covariances": [
+                    1.0043555533189194e-06
+                  ],
+                  "aic": -23933.901462921574,
+                  "bic": -23922.69965800249,
+                  "ks_stat": 0.43870633833998407,
+                  "ks_pvalue": 0.0
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.10530423627589611,
+                0.0,
+                0.0006025480075474788
+              ],
+              "aic": -32979.225248414004,
+              "bic": -32962.422541035376,
+              "ks_stat": 0.09313439905612098,
+              "ks_pvalue": 1.5072474645355953e-15
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "rho_pore_density_frac_bin",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 3
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 21
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 118
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 336
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 574
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 738
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 210
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.10530423627589611,
+              0.0,
+              0.0006025480075474788
+            ],
+            "aic": -32979.225248414004,
+            "bic": -32962.422541035376,
+            "ks_stat": 0.09313439905612098,
+            "ks_pvalue": 1.5072474645355953e-15
+          },
+          "fit_raw_before_smoothing": {
+            "n": 8,
+            "mean": 0.0005952060930092826,
+            "std": 1.562175237817403e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005952060930092826,
+                    1.562175237817403e-05
+                  ],
+                  "aic": -150.36652317659752,
+                  "bic": -150.20764009323784,
+                  "ks_stat": 0.24129199036631566,
+                  "ks_pvalue": 0.6553772309473304
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.025903980949499965,
+                    0.0,
+                    0.0005950046819590976
+                  ],
+                  "aic": -148.5817818860832,
+                  "bic": -148.3434572610437,
+                  "ks_stat": 0.23823656591350617,
+                  "ks_pvalue": 0.6703462450884099
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    1477.5070948150715,
+                    0.0,
+                    4.028448290353422e-07
+                  ],
+                  "aic": -148.5111315740556,
+                  "bic": -148.27280694901611,
+                  "ks_stat": 0.2392725164365333,
+                  "ks_pvalue": 0.6652626611353887
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.025903980949499965,
+                0.0,
+                0.0005950046819590976
+              ],
+              "aic": -148.5817818860832,
+              "bic": -148.3434572610437,
+              "ks_stat": 0.23823656591350617,
+              "ks_pvalue": 0.6703462450884099
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "rho_pore_density_frac_bin",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 3
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 21
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 118
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 336
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 574
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 738
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 210
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n": 7,
+          "fit": {
+            "n": 2000,
+            "mean": 0.0005684814539878831,
+            "std": 5.7678014913996727e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.09784869020551833,
+                    0.0,
+                    0.0005657058639925336
+                  ],
+                  "aic": -33525.32291010766,
+                  "bic": -33508.52020272903,
+                  "ks_stat": 0.04859716044198792,
+                  "ks_pvalue": 0.00015225976262152362
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    102.3235080100606,
+                    0.0,
+                    5.55572678305741e-06
+                  ],
+                  "aic": -33477.75466694525,
+                  "bic": -33460.95195956662,
+                  "ks_stat": 0.05433208488221963,
+                  "ks_pvalue": 1.4268560351399221e-05
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005684814539878831,
+                    5.7678014913996727e-05
+                  ],
+                  "aic": -33362.78379149799,
+                  "bic": -33351.58198657891,
+                  "ks_stat": 0.06533175692205517,
+                  "ks_pvalue": 7.264022054542192e-08
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0005684814539878831
+                  ],
+                  "covariances": [
+                    1.0033267534044192e-06
+                  ],
+                  "aic": -23937.993073480357,
+                  "bic": -23926.791268561272,
+                  "ks_stat": 0.4536391613286221,
+                  "ks_pvalue": 0.0
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.09784869020551833,
+                0.0,
+                0.0005657058639925336
+              ],
+              "aic": -33525.32291010766,
+              "bic": -33508.52020272903,
+              "ks_stat": 0.04859716044198792,
+              "ks_pvalue": 0.00015225976262152362
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "rho_pore_density_frac_bin",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 2
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 27
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 113
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 362
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 892
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 604
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "lognorm",
+            "params": [
+              0.09784869020551833,
+              0.0,
+              0.0005657058639925336
+            ],
+            "aic": -33525.32291010766,
+            "bic": -33508.52020272903,
+            "ks_stat": 0.04859716044198792,
+            "ks_pvalue": 0.00015225976262152362
+          },
+          "fit_raw_before_smoothing": {
+            "n": 7,
+            "mean": 0.0005700733594564388,
+            "std": 3.851385180840941e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005700733594564388,
+                    3.851385180840941e-05
+                  ],
+                  "aic": -118.43775685319297,
+                  "bic": -118.54593655508233,
+                  "ks_stat": 0.1893686705015396,
+                  "ks_pvalue": 0.9253905743512494
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.06730550370518422,
+                    0.0,
+                    0.000568780430055511
+                  ],
+                  "aic": -116.52227147336734,
+                  "bic": -116.6845410262014,
+                  "ks_stat": 0.18665659348039054,
+                  "ks_pvalue": 0.9323305599683572
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    220.37448432610316,
+                    0.0,
+                    2.586839221426662e-06
+                  ],
+                  "aic": -116.4997958174573,
+                  "bic": -116.66206537029136,
+                  "ks_stat": 0.18758583751533853,
+                  "ks_pvalue": 0.9299975620934938
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.06730550370518422,
+                0.0,
+                0.000568780430055511
+              ],
+              "aic": -116.52227147336734,
+              "bic": -116.6845410262014,
+              "ks_stat": 0.18665659348039054,
+              "ks_pvalue": 0.9323305599683572
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "rho_pore_density_frac_bin",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 2
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 27
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 113
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 362
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 892
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 604
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n": 36,
+          "fit": {
+            "n": 36,
+            "mean": 0.0005343412126203947,
+            "std": 2.655711012396433e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0005343412126203947,
+                    2.655711012396433e-05
+                  ],
+                  "aic": -652.4437648384226,
+                  "bic": -649.2767269615103,
+                  "ks_stat": 0.08336617522424328,
+                  "ks_pvalue": 0.9459748277189877
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.0497063954465782,
+                    0.0,
+                    0.0005336817784575373
+                  ],
+                  "aic": -650.5243649085127,
+                  "bic": -645.7738080931443,
+                  "ks_stat": 0.07792336272685774,
+                  "ks_pvalue": 0.9689722360118374
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    405.06784347745935,
+                    0.0,
+                    1.3191400433891243e-06
+                  ],
+                  "aic": -650.523944229463,
+                  "bic": -645.7733874140947,
+                  "ks_stat": 0.07967798024935124,
+                  "ks_pvalue": 0.96241424309322
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0005343412126203947
+                  ],
+                  "covariances": [
+                    1.0007052800981363e-06
+                  ],
+                  "aic": -427.14405237276424,
+                  "bic": -423.977014495852,
+                  "ks_stat": 0.4792293884890843,
+                  "ks_pvalue": 3.999752293349389e-08
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0005343412126203947,
+                2.655711012396433e-05
+              ],
+              "aic": -652.4437648384226,
+              "bic": -649.2767269615103,
+              "ks_stat": 0.08336617522424328,
+              "ks_pvalue": 0.9459748277189877
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0005343412126203947,
+              2.655711012396433e-05
+            ],
+            "aic": -652.4437648384226,
+            "bic": -649.2767269615103,
+            "ks_stat": 0.08336617522424328,
+            "ks_pvalue": 0.9459748277189877
+          }
+        }
+      ]
+    }
+  },
+  "rho_throat": {
+    "WT": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n": 36,
+          "fit": {
+            "n": 36,
+            "mean": 0.001494480564282358,
+            "std": 0.00018026898814127096,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.001494480564282358,
+                    0.00018026898814127096
+                  ],
+                  "aic": -514.552777576107,
+                  "bic": -511.3857396991948,
+                  "ks_stat": 0.11973778787698874,
+                  "ks_pvalue": 0.6369711240529432
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    61.077093012383365,
+                    0.0,
+                    2.4468757279907747e-05
+                  ],
+                  "aic": -508.6982252313808,
+                  "bic": -503.94766841601245,
+                  "ks_stat": 0.13027376185538642,
+                  "ks_pvalue": 0.5315955370764014
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.1324617630265195,
+                    0.0,
+                    0.0014822630152503719
+                  ],
+                  "aic": -506.4029772677012,
+                  "bic": -501.6524204523329,
+                  "ks_stat": 0.1345269223839327,
+                  "ks_pvalue": 0.49086610015520316
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.001494480564282358
+                  ],
+                  "covariances": [
+                    1.0324969080854776e-06
+                  ],
+                  "aic": -424.91045635002735,
+                  "bic": -421.7434184731151,
+                  "ks_stat": 0.3971605509886804,
+                  "ks_pvalue": 1.2374875556390047e-05
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.001494480564282358,
+                0.00018026898814127096
+              ],
+              "aic": -514.552777576107,
+              "bic": -511.3857396991948,
+              "ks_stat": 0.11973778787698874,
+              "ks_pvalue": 0.6369711240529432
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.001494480564282358,
+              0.00018026898814127096
+            ],
+            "aic": -514.552777576107,
+            "bic": -511.3857396991948,
+            "ks_stat": 0.11973778787698874,
+            "ks_pvalue": 0.6369711240529432
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 42,
+          "fit": {
+            "n": 42,
+            "mean": 0.0014948899811720357,
+            "std": 0.00020386307589879255,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0014948899811720357,
+                    0.00020386307589879255
+                  ],
+                  "aic": -590.6463700388284,
+                  "bic": -587.1710308022617,
+                  "ks_stat": 0.08931844112761111,
+                  "ks_pvalue": 0.8614380693980921
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    50.399490768945654,
+                    0.0,
+                    2.966081518611559e-05
+                  ],
+                  "aic": -586.4857162870354,
+                  "bic": -581.2727074321853,
+                  "ks_stat": 0.08204094042937904,
+                  "ks_pvalue": 0.9180027211989138
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.14393671372598163,
+                    0.0,
+                    0.0014800843391783497
+                  ],
+                  "aic": -584.9483359682345,
+                  "bic": -579.7353271133843,
+                  "ks_stat": 0.07749868473164634,
+                  "ks_pvalue": 0.9455964923204007
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0014948899811720354
+                  ],
+                  "covariances": [
+                    1.0415601537149169e-06
+                  ],
+                  "aic": -495.67450093698983,
+                  "bic": -492.1991617004231,
+                  "ks_stat": 0.36229376818352443,
+                  "ks_pvalue": 1.908339364492263e-05
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0014948899811720357,
+                0.00020386307589879255
+              ],
+              "aic": -590.6463700388284,
+              "bic": -587.1710308022617,
+              "ks_stat": 0.08931844112761111,
+              "ks_pvalue": 0.8614380693980921
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0014948899811720357,
+              0.00020386307589879255
+            ],
+            "aic": -590.6463700388284,
+            "bic": -587.1710308022617,
+            "ks_stat": 0.08931844112761111,
+            "ks_pvalue": 0.8614380693980921
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 64,
+          "fit": {
+            "n": 64,
+            "mean": 0.0015349821025776801,
+            "std": 0.00015722500318033955,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0015349821025776801,
+                    0.00015722500318033955
+                  ],
+                  "aic": -935.3784453250669,
+                  "bic": -931.0606791583475,
+                  "ks_stat": 0.09264929654609566,
+                  "ks_pvalue": 0.6087910917540944
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.10249051235535023,
+                    0.0,
+                    0.001526951669678613
+                  ],
+                  "aic": -933.9716374555758,
+                  "bic": -927.4949882054967,
+                  "ks_stat": 0.07985246819778535,
+                  "ks_pvalue": 0.7791441048776138
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    95.48896759037198,
+                    0.0,
+                    1.607496804408272e-05
+                  ],
+                  "aic": -933.9428275297324,
+                  "bic": -927.4661782796534,
+                  "ks_stat": 0.08432337848820176,
+                  "ks_pvalue": 0.7210008089046547
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0015349821025776801
+                  ],
+                  "covariances": [
+                    1.0247197016250577e-06
+                  ],
+                  "aic": -759.4618239548624,
+                  "bic": -755.1440577881431,
+                  "ks_stat": 0.3823154558406544,
+                  "ks_pvalue": 6.368743873972251e-09
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0015349821025776801,
+                0.00015722500318033955
+              ],
+              "aic": -935.3784453250669,
+              "bic": -931.0606791583475,
+              "ks_stat": 0.09264929654609566,
+              "ks_pvalue": 0.6087910917540944
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0015349821025776801,
+              0.00015722500318033955
+            ],
+            "aic": -935.3784453250669,
+            "bic": -931.0606791583475,
+            "ks_stat": 0.09264929654609566,
+            "ks_pvalue": 0.6087910917540944
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n": 49,
+          "fit": {
+            "n": 49,
+            "mean": 0.001529004349360664,
+            "std": 0.00017410075666689497,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.001529004349360664,
+                    0.00017410075666689497
+                  ],
+                  "aic": -705.2199075195733,
+                  "bic": -701.436266923352,
+                  "ks_stat": 0.07763717932146175,
+                  "ks_pvalue": 0.9069572239267213
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    75.0840522219157,
+                    0.0,
+                    2.0363902907658662e-05
+                  ],
+                  "aic": -702.339917536776,
+                  "bic": -696.6644566424442,
+                  "ks_stat": 0.07873617277068745,
+                  "ks_pvalue": 0.8981941550805366
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.11654117391166977,
+                    0.0,
+                    0.0015188337739639993
+                  ],
+                  "aic": -701.5976911588543,
+                  "bic": -695.9222302645225,
+                  "ks_stat": 0.07876614295206608,
+                  "ks_pvalue": 0.8979496792578693
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.001529004349360664
+                  ],
+                  "covariances": [
+                    1.0303110734719853e-06
+                  ],
+                  "aic": -579.9993156290501,
+                  "bic": -576.2156750328288,
+                  "ks_stat": 0.3694724530993144,
+                  "ks_pvalue": 1.6513020577065452e-06
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.001529004349360664,
+                0.00017410075666689497
+              ],
+              "aic": -705.2199075195733,
+              "bic": -701.436266923352,
+              "ks_stat": 0.07763717932146175,
+              "ks_pvalue": 0.9069572239267213
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.001529004349360664,
+              0.00017410075666689497
+            ],
+            "aic": -705.2199075195733,
+            "bic": -701.436266923352,
+            "ks_stat": 0.07763717932146175,
+            "ks_pvalue": 0.9069572239267213
+          }
+        }
+      ]
+    },
+    "AS": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n": 40,
+          "fit": {
+            "n": 2000,
+            "mean": 0.0017526065353478202,
+            "std": 0.00031708055287849816,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "gamma",
+                  "params": [
+                    30.47917469618047,
+                    0.0,
+                    5.75017713838377e-05
+                  ],
+                  "aic": -26583.043839128193,
+                  "bic": -26566.241131749568,
+                  "ks_stat": 0.010568337464146427,
+                  "ks_pvalue": 0.9771253597422577
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.18272267026021166,
+                    0.0,
+                    0.0017239355550047787
+                  ],
+                  "aic": -26569.9707759906,
+                  "bic": -26553.168068611976,
+                  "ks_stat": 0.021839901030330455,
+                  "ks_pvalue": 0.29157582258665493
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0017526065353478202,
+                    0.00031708055287849816
+                  ],
+                  "aic": -26545.66469254399,
+                  "bic": -26534.462887624904,
+                  "ks_stat": 0.02909851999239138,
+                  "ks_pvalue": 0.06630774468367462
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0017526065353478204
+                  ],
+                  "covariances": [
+                    1.100540077013734e-06
+                  ],
+                  "aic": -23576.95447325564,
+                  "bic": -23565.752668336554,
+                  "ks_stat": 0.2722192686266869,
+                  "ks_pvalue": 1.978697296683028e-131
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "gamma",
+              "params": [
+                30.47917469618047,
+                0.0,
+                5.75017713838377e-05
+              ],
+              "aic": -26583.043839128193,
+              "bic": -26566.241131749568,
+              "ks_stat": 0.010568337464146427,
+              "ks_pvalue": 0.9771253597422577
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "rho_throat_density_frac_bin",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1426
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 532
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 42
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "gamma",
+            "params": [
+              30.47917469618047,
+              0.0,
+              5.75017713838377e-05
+            ],
+            "aic": -26583.043839128193,
+            "bic": -26566.241131749568,
+            "ks_stat": 0.010568337464146427,
+            "ks_pvalue": 0.9771253597422577
+          },
+          "fit_raw_before_smoothing": {
+            "n": 40,
+            "mean": 0.0017182757287470894,
+            "std": 0.00033319122427598,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.18502668314635282,
+                    0.0,
+                    0.0016884410337189072
+                  ],
+                  "aic": -526.1813071129097,
+                  "bic": -521.114668750568,
+                  "ks_stat": 0.07003452443579894,
+                  "ks_pvalue": 0.981705516220281
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    28.711557850382754,
+                    0.0,
+                    5.984613366161123e-05
+                  ],
+                  "aic": -525.0285272739479,
+                  "bic": -519.9618889116061,
+                  "ks_stat": 0.0786156922889697,
+                  "ks_pvalue": 0.9492906484689072
+                },
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0017182757287470894,
+                    0.00033319122427598
+                  ],
+                  "aic": -523.0284362016719,
+                  "bic": -519.650677293444,
+                  "ks_stat": 0.10222031743819993,
+                  "ks_pvalue": 0.7593604767196644
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0017182757287470898
+                  ],
+                  "covariances": [
+                    1.1110163919345265e-06
+                  ],
+                  "aic": -466.8973982345504,
+                  "bic": -463.51963932632253,
+                  "ks_stat": 0.3122390842652037,
+                  "ks_pvalue": 0.0005797968053731228
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.18502668314635282,
+                0.0,
+                0.0016884410337189072
+              ],
+              "aic": -526.1813071129097,
+              "bic": -521.114668750568,
+              "ks_stat": 0.07003452443579894,
+              "ks_pvalue": 0.981705516220281
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "rho_throat_density_frac_bin",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1426
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 532
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 42
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n": 79,
+          "fit": {
+            "n": 79,
+            "mean": 0.0018332600962340019,
+            "std": 0.00029588648155105585,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0018332600962340019,
+                    0.00029588648155105585
+                  ],
+                  "aic": -1055.6421920582027,
+                  "bic": -1050.9032963532686,
+                  "ks_stat": 0.07552949809699638,
+                  "ks_pvalue": 0.7294548223759092
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    33.41808129599332,
+                    0.0,
+                    5.485832893864561e-05
+                  ],
+                  "aic": -1044.276401439072,
+                  "bic": -1037.168057881671,
+                  "ks_stat": 0.08832520184104886,
+                  "ks_pvalue": 0.5392294383455185
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.18266155891969033,
+                    0.0,
+                    0.0018059003598291314
+                  ],
+                  "aic": -1036.4646777472408,
+                  "bic": -1029.3563341898398,
+                  "ks_stat": 0.10383152496882198,
+                  "ks_pvalue": 0.3383793103000293
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0018332600962340019
+                  ],
+                  "covariances": [
+                    1.0875488099646633e-06
+                  ],
+                  "aic": -929.2432808035076,
+                  "bic": -924.5043850985735,
+                  "ks_stat": 0.2961098108004946,
+                  "ks_pvalue": 1.233818183668962e-06
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0018332600962340019,
+                0.00029588648155105585
+              ],
+              "aic": -1055.6421920582027,
+              "bic": -1050.9032963532686,
+              "ks_stat": 0.07552949809699638,
+              "ks_pvalue": 0.7294548223759092
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0018332600962340019,
+              0.00029588648155105585
+            ],
+            "aic": -1055.6421920582027,
+            "bic": -1050.9032963532686,
+            "ks_stat": 0.07552949809699638,
+            "ks_pvalue": 0.7294548223759092
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n": 62,
+          "fit": {
+            "n": 62,
+            "mean": 0.0019172159937911632,
+            "std": 0.00018352403630553048,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0019172159937911632,
+                    0.00018352403630553048
+                  ],
+                  "aic": -886.8440708474633,
+                  "bic": -882.5898020773731,
+                  "ks_stat": 0.0838300864354331,
+                  "ks_pvalue": 0.7444536092176386
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.09501080142971952,
+                    0.0,
+                    0.0019085477942715403
+                  ],
+                  "aic": -886.333611773695,
+                  "bic": -879.9522086185598,
+                  "ks_stat": 0.08170193930192438,
+                  "ks_pvalue": 0.7715393131296043
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    110.50528090194867,
+                    0.0,
+                    1.7349541833139258e-05
+                  ],
+                  "aic": -885.9936962149732,
+                  "bic": -879.6122930598378,
+                  "ks_stat": 0.08261860218691294,
+                  "ks_pvalue": 0.759958330314753
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0019172159937911632
+                  ],
+                  "covariances": [
+                    1.0336810719018737e-06
+                  ],
+                  "aic": -734.5392621779056,
+                  "bic": -730.2849934078154,
+                  "ks_stat": 0.3664115253639968,
+                  "ks_pvalue": 5.6993203423553294e-08
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0019172159937911632,
+                0.00018352403630553048
+              ],
+              "aic": -886.8440708474633,
+              "bic": -882.5898020773731,
+              "ks_stat": 0.0838300864354331,
+              "ks_pvalue": 0.7444536092176386
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0019172159937911632,
+              0.00018352403630553048
+            ],
+            "aic": -886.8440708474633,
+            "bic": -882.5898020773731,
+            "ks_stat": 0.0838300864354331,
+            "ks_pvalue": 0.7444536092176386
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 49,
+          "fit": {
+            "n": 49,
+            "mean": 0.0020010866915559223,
+            "std": 0.00018717641322455535,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0020010866915559223,
+                    0.00018717641322455535
+                  ],
+                  "aic": -698.1230057058837,
+                  "bic": -694.3393651096624,
+                  "ks_stat": 0.12367545474209118,
+                  "ks_pvalue": 0.4085931340320117
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    110.04215105264684,
+                    0.0,
+                    1.8184728964436124e-05
+                  ],
+                  "aic": -694.5622258412028,
+                  "bic": -688.8867649468709,
+                  "ks_stat": 0.12091525775459888,
+                  "ks_pvalue": 0.4365673972162375
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.09670150399238989,
+                    0.0,
+                    0.0019920012439298973
+                  ],
+                  "aic": -693.3087219905142,
+                  "bic": -687.6332610961823,
+                  "ks_stat": 0.12145769183811933,
+                  "ks_pvalue": 0.4309868817603254
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.002001086691555922
+                  ],
+                  "covariances": [
+                    1.0350350096676094e-06
+                  ],
+                  "aic": -579.5581075527317,
+                  "bic": -575.7744669565104,
+                  "ks_stat": 0.37480146945083814,
+                  "ks_pvalue": 1.0875894635150271e-06
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0020010866915559223,
+                0.00018717641322455535
+              ],
+              "aic": -698.1230057058837,
+              "bic": -694.3393651096624,
+              "ks_stat": 0.12367545474209118,
+              "ks_pvalue": 0.4085931340320117
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0020010866915559223,
+              0.00018717641322455535
+            ],
+            "aic": -698.1230057058837,
+            "bic": -694.3393651096624,
+            "ks_stat": 0.12367545474209118,
+            "ks_pvalue": 0.4085931340320117
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 20,
+          "fit": {
+            "n": 20,
+            "mean": 0.0019796042447147366,
+            "std": 0.00019292835757760607,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0019796042447147366,
+                    0.00019292835757760607
+                  ],
+                  "aic": -281.37012436116726,
+                  "bic": -279.3786598140593,
+                  "ks_stat": 0.18808712857541698,
+                  "ks_pvalue": 0.42653826586648
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    98.66845928213176,
+                    0.0,
+                    2.0063192018173433e-05
+                  ],
+                  "aic": -278.20757410595826,
+                  "bic": -275.2203772852963,
+                  "ks_stat": 0.1977334958097583,
+                  "ks_pvalue": 0.3661040771195325
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.102561164190393,
+                    0.0,
+                    0.001969581164200014
+                  ],
+                  "aic": -277.5316706880211,
+                  "bic": -274.54447386735916,
+                  "ks_stat": 0.20209763051113783,
+                  "ks_pvalue": 0.34061793366665116
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.001979604244714736
+                  ],
+                  "covariances": [
+                    1.0372213511575926e-06
+                  ],
+                  "aic": -234.10404985045747,
+                  "bic": -232.11258530334948,
+                  "ks_stat": 0.3973305381037472,
+                  "ks_pvalue": 0.0023253140493152413
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0019796042447147366,
+                0.00019292835757760607
+              ],
+              "aic": -281.37012436116726,
+              "bic": -279.3786598140593,
+              "ks_stat": 0.18808712857541698,
+              "ks_pvalue": 0.42653826586648
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0019796042447147366,
+              0.00019292835757760607
+            ],
+            "aic": -281.37012436116726,
+            "bic": -279.3786598140593,
+            "ks_stat": 0.18808712857541698,
+            "ks_pvalue": 0.42653826586648
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n": 8,
+          "fit": {
+            "n": 2000,
+            "mean": 0.002050162132801596,
+            "std": 0.00017323070321977014,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.002050162132801596,
+                    0.00017323070321977014
+                  ],
+                  "aic": -28963.79109607918,
+                  "bic": -28952.589291160097,
+                  "ks_stat": 0.06307794247646104,
+                  "ks_pvalue": 2.3198508757581071e-07
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    133.60578026670254,
+                    0.0,
+                    1.5344861043504875e-05
+                  ],
+                  "aic": -28877.37681789019,
+                  "bic": -28860.574110511563,
+                  "ks_stat": 0.07550638703724455,
+                  "ks_pvalue": 2.3100646068976405e-10
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.08773489444627357,
+                    0.0,
+                    0.002042494505704952
+                  ],
+                  "aic": -28826.321850125147,
+                  "bic": -28809.51914274652,
+                  "ks_stat": 0.0815969996037742,
+                  "ks_pvalue": 4.957006300188724e-12
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0020501621328015956
+                  ],
+                  "covariances": [
+                    1.030008876538016e-06
+                  ],
+                  "aic": -23833.862981687795,
+                  "bic": -23822.66117676871,
+                  "ks_stat": 0.3703029663737336,
+                  "ks_pvalue": 1.4508197486488435e-246
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.002050162132801596,
+                0.00017323070321977014
+              ],
+              "aic": -28963.79109607918,
+              "bic": -28952.589291160097,
+              "ks_stat": 0.06307794247646104,
+              "ks_pvalue": 2.3198508757581071e-07
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "rho_throat_density_frac_bin",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 1
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 20
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 102
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 302
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 582
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 790
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 203
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.002050162132801596,
+              0.00017323070321977014
+            ],
+            "aic": -28963.79109607918,
+            "bic": -28952.589291160097,
+            "ks_stat": 0.06307794247646104,
+            "ks_pvalue": 2.3198508757581071e-07
+          },
+          "fit_raw_before_smoothing": {
+            "n": 8,
+            "mean": 0.0021419508623076724,
+            "std": 8.948727785642112e-05,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0021419508623076724,
+                    8.948727785642112e-05
+                  ],
+                  "aic": -122.4396089030119,
+                  "bic": -122.28072581965223,
+                  "ks_stat": 0.1391191456790012,
+                  "ks_pvalue": 0.9910854912567029
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    570.1031741945842,
+                    0.0,
+                    3.757128462464225e-06
+                  ],
+                  "aic": -120.40949337540948,
+                  "bic": -120.17116875036997,
+                  "ks_stat": 0.13854305654035326,
+                  "ks_pvalue": 0.9914778450510244
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.04195088020688422,
+                    0.0,
+                    0.00214007257291154
+                  ],
+                  "aic": -120.38772589994569,
+                  "bic": -120.14940127490618,
+                  "ks_stat": 0.1413003558959407,
+                  "ks_pvalue": 0.9894829057359286
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0021419508623076724,
+                8.948727785642112e-05
+              ],
+              "aic": -122.4396089030119,
+              "bic": -122.28072581965223,
+              "ks_stat": 0.1391191456790012,
+              "ks_pvalue": 0.9910854912567029
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "rho_throat_density_frac_bin",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 1
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 20
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 102
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 302
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 582
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 790
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 203
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n": 7,
+          "fit": {
+            "n": 2000,
+            "mean": 0.0020351425224786465,
+            "std": 0.00016191550185774348,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0020351425224786465,
+                    0.00016191550185774348
+                  ],
+                  "aic": -29233.989676300527,
+                  "bic": -29222.787871381443,
+                  "ks_stat": 0.03374692795789469,
+                  "ks_pvalue": 0.020539092086500135
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    154.0733113207434,
+                    0.0,
+                    1.320892310960963e-05
+                  ],
+                  "aic": -29190.528591153645,
+                  "bic": -29173.72588377502,
+                  "ks_stat": 0.043049617225552894,
+                  "ks_pvalue": 0.0011698526200366716
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.08123384756137157,
+                    0.0,
+                    0.0020285416446728273
+                  ],
+                  "aic": -29161.691557268077,
+                  "bic": -29144.888849889452,
+                  "ks_stat": 0.048303377484877286,
+                  "ks_pvalue": 0.00017067506753674932
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.002035142522478646
+                  ],
+                  "covariances": [
+                    1.0262166297418449e-06
+                  ],
+                  "aic": -23848.415500521114,
+                  "bic": -23837.21369560203,
+                  "ks_stat": 0.3584877534019333,
+                  "ks_pvalue": 1.295333438202773e-230
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.0020351425224786465,
+                0.00016191550185774348
+              ],
+              "aic": -29233.989676300527,
+              "bic": -29222.787871381443,
+              "ks_stat": 0.03374692795789469,
+              "ks_pvalue": 0.020539092086500135
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "rho_throat_density_frac_bin",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 3
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 22
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 120
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 381
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 907
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 567
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.0020351425224786465,
+              0.00016191550185774348
+            ],
+            "aic": -29233.989676300527,
+            "bic": -29222.787871381443,
+            "ks_stat": 0.03374692795789469,
+            "ks_pvalue": 0.020539092086500135
+          },
+          "fit_raw_before_smoothing": {
+            "n": 7,
+            "mean": 0.0020706501136628576,
+            "std": 0.00013043610143185157,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.0020706501136628576,
+                    0.00013043610143185157
+                  ],
+                  "aic": -101.35963986956926,
+                  "bic": -101.46781957145863,
+                  "ks_stat": 0.1510920413852901,
+                  "ks_pvalue": 0.9885690646450156
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.06266603782794553,
+                    0.0,
+                    0.0020665755107865907
+                  ],
+                  "aic": -99.46003286815213,
+                  "bic": -99.62230242098619,
+                  "ks_stat": 0.14535323505280712,
+                  "ks_pvalue": 0.9925031012525253
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    254.00873588481724,
+                    0.0,
+                    8.151885432010552e-06
+                  ],
+                  "aic": -99.43332850615963,
+                  "bic": -99.59559805899369,
+                  "ks_stat": 0.14734780971259848,
+                  "ks_pvalue": 0.9912620122048429
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "lognorm",
+              "params": [
+                0.06266603782794553,
+                0.0,
+                0.0020665755107865907
+              ],
+              "aic": -99.46003286815213,
+              "bic": -99.62230242098619,
+              "ks_stat": 0.14535323505280712,
+              "ks_pvalue": 0.9925031012525253
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "rho_throat_density_frac_bin",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 3
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 22
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 120
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 381
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 907
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 567
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n": 36,
+          "fit": {
+            "n": 36,
+            "mean": 0.002040793500657896,
+            "std": 0.00019357871427340108,
+            "selection": {
+              "criterion_primary": "bic",
+              "criterion_secondary": "ks_stat",
+              "prefer_positive_distribution_when_bic_close": true,
+              "bic_close_threshold": 2.0,
+              "gmm_enabled": true,
+              "candidates": [
+                {
+                  "name": "norm",
+                  "params": [
+                    0.002040793500657896,
+                    0.00019357871427340108
+                  ],
+                  "aic": -509.4239218085585,
+                  "bic": -506.25688393164626,
+                  "ks_stat": 0.17562165887913267,
+                  "ks_pvalue": 0.19249945639585697
+                },
+                {
+                  "name": "gamma",
+                  "params": [
+                    101.92084975858171,
+                    0.0,
+                    2.0023317167114395e-05
+                  ],
+                  "aic": -504.54154931568166,
+                  "bic": -499.79099250031334,
+                  "ks_stat": 0.19133525885075436,
+                  "ks_pvalue": 0.12533215875810044
+                },
+                {
+                  "name": "lognorm",
+                  "params": [
+                    0.10145573082798079,
+                    0.0,
+                    0.002030790068118394
+                  ],
+                  "aic": -502.93376813587156,
+                  "bic": -498.18321132050323,
+                  "ks_stat": 0.19888613550096246,
+                  "ks_pvalue": 0.10062265060539666
+                },
+                {
+                  "name": "gmm",
+                  "n_components": 1,
+                  "weights": [
+                    1.0
+                  ],
+                  "means": [
+                    0.0020407935006578966
+                  ],
+                  "covariances": [
+                    1.037472718619743e-06
+                  ],
+                  "aic": -424.5701569271939,
+                  "bic": -421.4031190502817,
+                  "ks_stat": 0.38135985133137673,
+                  "ks_pvalue": 3.229598944577305e-05
+                }
+              ]
+            },
+            "fit_type": "parametric",
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.002040793500657896,
+                0.00019357871427340108
+              ],
+              "aic": -509.4239218085585,
+              "bic": -506.25688393164626,
+              "ks_stat": 0.17562165887913267,
+              "ks_pvalue": 0.19249945639585697
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.002040793500657896,
+              0.00019357871427340108
+            ],
+            "aic": -509.4239218085585,
+            "bic": -506.25688393164626,
+            "ks_stat": 0.17562165887913267,
+            "ks_pvalue": 0.19249945639585697
+          }
+        }
+      ]
+    }
+  },
+  "frac_pore": {
+    "WT": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.39447251084514423,
+            "std": 0.04283774727012128,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.39447251084514423,
+                0.04283774727012128
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.39447251084514423,
+              0.04283774727012128
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 42,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 42,
+            "mean": 0.3857901329836835,
+            "std": 0.05224012323122096,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.3857901329836835,
+                0.05224012323122096
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.3857901329836835,
+              0.05224012323122096
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 64,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 64,
+            "mean": 0.3947275439240431,
+            "std": 0.04217321268484275,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.3947275439240431,
+                0.04217321268484275
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.3947275439240431,
+              0.04217321268484275
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.37072831868658773,
+            "std": 0.04017134867621741,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.37072831868658773,
+                0.04017134867621741
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.37072831868658773,
+              0.04017134867621741
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ]
+    },
+    "AS": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n": 40,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.4613387881060444,
+            "std": 0.09108437895084633,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.4613387881060444,
+                0.09108437895084633
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "frac_pore_density_frac_bin",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1364
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 595
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 41
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.4613387881060444,
+              0.09108437895084633
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 40,
+            "mean": 0.45791026147599345,
+            "std": 0.09372065860340066,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.45791026147599345,
+                0.09372065860340066
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "frac_pore_density_frac_bin",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1364
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 595
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 41
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n": 79,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 79,
+            "mean": 0.46504068289173817,
+            "std": 0.08085204859489414,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.46504068289173817,
+                0.08085204859489414
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.46504068289173817,
+              0.08085204859489414
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n": 62,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 62,
+            "mean": 0.47013588412678,
+            "std": 0.05210108303742582,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.47013588412678,
+                0.05210108303742582
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.47013588412678,
+              0.05210108303742582
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.4937808259738699,
+            "std": 0.042009054363550444,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.4937808259738699,
+                0.042009054363550444
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.4937808259738699,
+              0.042009054363550444
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 20,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 20,
+            "mean": 0.5154982432373257,
+            "std": 0.046246935879025855,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5154982432373257,
+                0.046246935879025855
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.5154982432373257,
+              0.046246935879025855
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n": 8,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.5034889944953264,
+            "std": 0.03968440065149501,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5034889944953264,
+                0.03968440065149501
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "frac_pore_density_frac_bin",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 3
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 28
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 100
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 331
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 565
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 770
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 203
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.5034889944953264,
+              0.03968440065149501
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 8,
+            "mean": 0.49889378946102453,
+            "std": 0.021924011680872175,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.49889378946102453,
+                0.021924011680872175
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "frac_pore_density_frac_bin",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 3
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 28
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 100
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 331
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 565
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 770
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 203
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n": 7,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.5142974923607551,
+            "std": 0.03815026005722521,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5142974923607551,
+                0.03815026005722521
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "frac_pore_density_frac_bin",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 5
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 26
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 119
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 379
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 912
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 559
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.5142974923607551,
+              0.03815026005722521
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 7,
+            "mean": 0.5143797233335029,
+            "std": 0.03568318710336433,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5143797233335029,
+                0.03568318710336433
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "frac_pore_density_frac_bin",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 5
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 26
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 119
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 379
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 912
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 559
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.5527798406387022,
+            "std": 0.03424281489463552,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5527798406387022,
+                0.03424281489463552
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.5527798406387022,
+              0.03424281489463552
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ]
+    }
+  },
+  "frac_throat": {
+    "WT": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        40.0,
+        80.0,
+        100.0,
+        120.0,
+        180.0
+      ],
+      "bins": [
+        {
+          "t_center": 60.0,
+          "t_min": 40.0,
+          "t_max": 80.0,
+          "n": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.44317979645886324,
+            "std": 0.09034253232264333,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.44317979645886324,
+                0.09034253232264333
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.44317979645886324,
+              0.09034253232264333
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 42,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 42,
+            "mean": 0.43929829933498993,
+            "std": 0.1357137041509896,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.43929829933498993,
+                0.1357137041509896
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.43929829933498993,
+              0.1357137041509896
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 64,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 64,
+            "mean": 0.4709804447844317,
+            "std": 0.10879947369867492,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.4709804447844317,
+                0.10879947369867492
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.4709804447844317,
+              0.10879947369867492
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 120.0,
+          "t_max": 180.0,
+          "n": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.434024202356831,
+            "std": 0.09160987297704137,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.434024202356831,
+                0.09160987297704137
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.434024202356831,
+              0.09160987297704137
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ]
+    },
+    "AS": {
+      "bin_width_nm": 20.0,
+      "bin_edges": [
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        394.000000001
+      ],
+      "bins": [
+        {
+          "t_center": 30.0,
+          "t_min": 20.0,
+          "t_max": 40.0,
+          "n": 40,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.44016103620170816,
+            "std": 0.125073620301568,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.44016103620170816,
+                0.125073620301568
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "low_edge_sparse",
+              "label": "frac_throat_density_frac_bin",
+              "target_t_center_nm": 30.0,
+              "target_t_min_nm": 20.0,
+              "target_t_max_nm": 40.0,
+              "smooth_range_nm": [
+                20.0,
+                40.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 15.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 40,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.6944377315564213,
+                  "n_raw": 40,
+                  "n_draw": 1405
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": 20.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.28549188643477574,
+                  "n_raw": 79,
+                  "n_draw": 556
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": 40.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.019836961565596337,
+                  "n_raw": 62,
+                  "n_draw": 39
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.44016103620170816,
+              0.125073620301568
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 40,
+            "mean": 0.41627814163623766,
+            "std": 0.12017669486130797,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.41627814163623766,
+                0.12017669486130797
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "low_edge_sparse",
+            "label": "frac_throat_density_frac_bin",
+            "target_t_center_nm": 30.0,
+            "target_t_min_nm": 20.0,
+            "target_t_max_nm": 40.0,
+            "smooth_range_nm": [
+              20.0,
+              40.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 15.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 40,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.6944377315564213,
+                "n_raw": 40,
+                "n_draw": 1405
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": 20.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.28549188643477574,
+                "n_raw": 79,
+                "n_draw": 556
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": 40.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.019836961565596337,
+                "n_raw": 62,
+                "n_draw": 39
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 50.0,
+          "t_min": 40.0,
+          "t_max": 60.0,
+          "n": 79,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 79,
+            "mean": 0.4936147026847021,
+            "std": 0.11518846166547776,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.4936147026847021,
+                0.11518846166547776
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.4936147026847021,
+              0.11518846166547776
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 70.0,
+          "t_min": 60.0,
+          "t_max": 80.0,
+          "n": 62,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 62,
+            "mean": 0.5942987448214361,
+            "std": 0.11255036034967957,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.5942987448214361,
+                0.11255036034967957
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.5942987448214361,
+              0.11255036034967957
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 90.0,
+          "t_min": 80.0,
+          "t_max": 100.0,
+          "n": 49,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 49,
+            "mean": 0.6835644893227509,
+            "std": 0.12139699097194083,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.6835644893227509,
+                0.12139699097194083
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.6835644893227509,
+              0.12139699097194083
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 110.0,
+          "t_min": 100.0,
+          "t_max": 120.0,
+          "n": 20,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 20,
+            "mean": 0.7414461230717905,
+            "std": 0.1398723079264992,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.7414461230717905,
+                0.1398723079264992
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.7414461230717905,
+              0.1398723079264992
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        },
+        {
+          "t_center": 130.0,
+          "t_min": 120.0,
+          "t_max": 140.0,
+          "n": 8,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.7525562721945918,
+            "std": 0.12659673914435807,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.7525562721945918,
+                0.12659673914435807
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "frac_throat_density_frac_bin",
+              "target_t_center_nm": 130.0,
+              "target_t_min_nm": 120.0,
+              "target_t_max_nm": 140.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 8,
+              "sources": [
+                {
+                  "bin_index": 0,
+                  "source_type": "output_bin",
+                  "t_center": 30.0,
+                  "effective_t_center": 30.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 20.0,
+                  "t_max": 40.0,
+                  "weight": 0.001470508293677428,
+                  "n_raw": 40,
+                  "n_draw": 3
+                },
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.010865668275925312,
+                  "n_raw": 79,
+                  "n_draw": 23
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.05147847064780857,
+                  "n_raw": 62,
+                  "n_draw": 97
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.15637778614484907,
+                  "n_raw": 49,
+                  "n_draw": 314
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -20.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.3045823373390908,
+                  "n_raw": 20,
+                  "n_draw": 588
+                },
+                {
+                  "bin_index": 5,
+                  "source_type": "output_bin",
+                  "t_center": 130.0,
+                  "effective_t_center": 130.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 120.0,
+                  "t_max": 140.0,
+                  "weight": 0.3803773075038124,
+                  "n_raw": 8,
+                  "n_draw": 770
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 50.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.0948479217948364,
+                  "n_raw": 7,
+                  "n_draw": 205
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.7525562721945918,
+              0.12659673914435807
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 8,
+            "mean": 0.7775346904019103,
+            "std": 0.05486088914410149,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.7775346904019103,
+                0.05486088914410149
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "frac_throat_density_frac_bin",
+            "target_t_center_nm": 130.0,
+            "target_t_min_nm": 120.0,
+            "target_t_max_nm": 140.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 8,
+            "sources": [
+              {
+                "bin_index": 0,
+                "source_type": "output_bin",
+                "t_center": 30.0,
+                "effective_t_center": 30.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 20.0,
+                "t_max": 40.0,
+                "weight": 0.001470508293677428,
+                "n_raw": 40,
+                "n_draw": 3
+              },
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.010865668275925312,
+                "n_raw": 79,
+                "n_draw": 23
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.05147847064780857,
+                "n_raw": 62,
+                "n_draw": 97
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.15637778614484907,
+                "n_raw": 49,
+                "n_draw": 314
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -20.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.3045823373390908,
+                "n_raw": 20,
+                "n_draw": 588
+              },
+              {
+                "bin_index": 5,
+                "source_type": "output_bin",
+                "t_center": 130.0,
+                "effective_t_center": 130.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 120.0,
+                "t_max": 140.0,
+                "weight": 0.3803773075038124,
+                "n_raw": 8,
+                "n_draw": 770
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 50.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.0948479217948364,
+                "n_raw": 7,
+                "n_draw": 205
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 150.0,
+          "t_min": 140.0,
+          "t_max": 160.0,
+          "n": 7,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 2000,
+            "mean": 0.817564551861808,
+            "std": 0.1239673202766918,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.817564551861808,
+                0.1239673202766918
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            },
+            "smoothing": {
+              "enabled": true,
+              "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+              "region": "mid_high_sparse",
+              "label": "frac_throat_density_frac_bin",
+              "target_t_center_nm": 150.0,
+              "target_t_min_nm": 140.0,
+              "target_t_max_nm": 160.0,
+              "smooth_range_nm": [
+                120.0,
+                160.0
+              ],
+              "auxiliary_right_source_range_nm": [
+                160.0,
+                200.0
+              ],
+              "bandwidth_nm": 30.0,
+              "source_filter": "target_bin_plus_outside_smooth_range",
+              "radius_left_source_range_nm": null,
+              "n_synthetic": 2000,
+              "n_raw_in_bin": 7,
+              "sources": [
+                {
+                  "bin_index": 1,
+                  "source_type": "output_bin",
+                  "t_center": 50.0,
+                  "effective_t_center": 50.0,
+                  "effective_distance_nm": -100.0,
+                  "t_min": 40.0,
+                  "t_max": 60.0,
+                  "weight": 0.0017686966835200387,
+                  "n_raw": 79,
+                  "n_draw": 2
+                },
+                {
+                  "bin_index": 2,
+                  "source_type": "output_bin",
+                  "t_center": 70.0,
+                  "effective_t_center": 70.0,
+                  "effective_distance_nm": -80.0,
+                  "t_min": 60.0,
+                  "t_max": 80.0,
+                  "weight": 0.013068999016522167,
+                  "n_raw": 62,
+                  "n_draw": 14
+                },
+                {
+                  "bin_index": 3,
+                  "source_type": "output_bin",
+                  "t_center": 90.0,
+                  "effective_t_center": 90.0,
+                  "effective_distance_nm": -60.0,
+                  "t_min": 80.0,
+                  "t_max": 100.0,
+                  "weight": 0.061917230048234906,
+                  "n_raw": 49,
+                  "n_draw": 135
+                },
+                {
+                  "bin_index": 4,
+                  "source_type": "output_bin",
+                  "t_center": 110.0,
+                  "effective_t_center": 110.0,
+                  "effective_distance_nm": -40.0,
+                  "t_min": 100.0,
+                  "t_max": 120.0,
+                  "weight": 0.1880879372933835,
+                  "n_raw": 20,
+                  "n_draw": 372
+                },
+                {
+                  "bin_index": 6,
+                  "source_type": "output_bin",
+                  "t_center": 150.0,
+                  "effective_t_center": 150.0,
+                  "effective_distance_nm": 0.0,
+                  "t_min": 140.0,
+                  "t_max": 160.0,
+                  "weight": 0.45750988631680223,
+                  "n_raw": 7,
+                  "n_draw": 910
+                },
+                {
+                  "bin_index": 8,
+                  "source_type": "auxiliary_right_source",
+                  "t_center": 180.0,
+                  "effective_t_center": 180.0,
+                  "effective_distance_nm": 30.0,
+                  "t_min": 160.0,
+                  "t_max": 200.0,
+                  "weight": 0.27749377317278195,
+                  "n_raw": 7,
+                  "n_draw": 567
+                }
+              ]
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.817564551861808,
+              0.1239673202766918
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          },
+          "fit_raw_before_smoothing": {
+            "fit_type": "parametric",
+            "n": 7,
+            "mean": 0.8129680909350715,
+            "std": 0.09207371777660561,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.8129680909350715,
+                0.09207371777660561
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "smoothing": {
+            "enabled": true,
+            "method": "gaussian_neighborhood_refit_from_fitted_distributions",
+            "region": "mid_high_sparse",
+            "label": "frac_throat_density_frac_bin",
+            "target_t_center_nm": 150.0,
+            "target_t_min_nm": 140.0,
+            "target_t_max_nm": 160.0,
+            "smooth_range_nm": [
+              120.0,
+              160.0
+            ],
+            "auxiliary_right_source_range_nm": [
+              160.0,
+              200.0
+            ],
+            "bandwidth_nm": 30.0,
+            "source_filter": "target_bin_plus_outside_smooth_range",
+            "radius_left_source_range_nm": null,
+            "n_synthetic": 2000,
+            "n_raw_in_bin": 7,
+            "sources": [
+              {
+                "bin_index": 1,
+                "source_type": "output_bin",
+                "t_center": 50.0,
+                "effective_t_center": 50.0,
+                "effective_distance_nm": -100.0,
+                "t_min": 40.0,
+                "t_max": 60.0,
+                "weight": 0.0017686966835200387,
+                "n_raw": 79,
+                "n_draw": 2
+              },
+              {
+                "bin_index": 2,
+                "source_type": "output_bin",
+                "t_center": 70.0,
+                "effective_t_center": 70.0,
+                "effective_distance_nm": -80.0,
+                "t_min": 60.0,
+                "t_max": 80.0,
+                "weight": 0.013068999016522167,
+                "n_raw": 62,
+                "n_draw": 14
+              },
+              {
+                "bin_index": 3,
+                "source_type": "output_bin",
+                "t_center": 90.0,
+                "effective_t_center": 90.0,
+                "effective_distance_nm": -60.0,
+                "t_min": 80.0,
+                "t_max": 100.0,
+                "weight": 0.061917230048234906,
+                "n_raw": 49,
+                "n_draw": 135
+              },
+              {
+                "bin_index": 4,
+                "source_type": "output_bin",
+                "t_center": 110.0,
+                "effective_t_center": 110.0,
+                "effective_distance_nm": -40.0,
+                "t_min": 100.0,
+                "t_max": 120.0,
+                "weight": 0.1880879372933835,
+                "n_raw": 20,
+                "n_draw": 372
+              },
+              {
+                "bin_index": 6,
+                "source_type": "output_bin",
+                "t_center": 150.0,
+                "effective_t_center": 150.0,
+                "effective_distance_nm": 0.0,
+                "t_min": 140.0,
+                "t_max": 160.0,
+                "weight": 0.45750988631680223,
+                "n_raw": 7,
+                "n_draw": 910
+              },
+              {
+                "bin_index": 8,
+                "source_type": "auxiliary_right_source",
+                "t_center": 180.0,
+                "effective_t_center": 180.0,
+                "effective_distance_nm": 30.0,
+                "t_min": 160.0,
+                "t_max": 200.0,
+                "weight": 0.27749377317278195,
+                "n_raw": 7,
+                "n_draw": 567
+              }
+            ]
+          }
+        },
+        {
+          "t_center": 277.0000000005,
+          "t_min": 160.0,
+          "t_max": 394.000000001,
+          "n": 36,
+          "fit": {
+            "fit_type": "parametric",
+            "n": 36,
+            "mean": 0.959816051183901,
+            "std": 0.12048650980191361,
+            "distribution": {
+              "name": "norm",
+              "params": [
+                0.959816051183901,
+                0.12048650980191361
+              ],
+              "aic": null,
+              "bic": null,
+              "ks_stat": null,
+              "ks_pvalue": null
+            }
+          },
+          "distribution": {
+            "name": "norm",
+            "params": [
+              0.959816051183901,
+              0.12048650980191361
+            ],
+            "aic": null,
+            "bic": null,
+            "ks_stat": null,
+            "ks_pvalue": null
+          }
+        }
+      ]
+    }
+  }
+}

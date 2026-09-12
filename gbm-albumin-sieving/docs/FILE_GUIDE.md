@@ -13,9 +13,13 @@ has not yet been migrated are not part of this package.
 - `.gitignore` excludes generated outputs, environments, and local research data.
 - `configs/reproducibility/` records realized seeds, thickness arrays, and
   settings for the main synthetic-network and sensitivity calculations.
+- `data/fitted_parameters/` contains the published Phase 1 thickness fit and
+  Phase 2 structural fits required to generate synthetic WT and AS networks.
 - `examples/demo_100/` contains the small manifest, aggregate checkpoints,
   validation summary, and instructions for downloading the separate Release
   asset.
+- `examples/generation_2/` documents a fixed-seed run that generates one WT and
+  one AS network and records its expected results.
 
 ## Analysis package
 
@@ -69,6 +73,6 @@ has not yet been migrated are not part of this package.
   one previously classified network and is the smallest public GBM entry point.
 
 The package README and reproducibility configurations document the supplied
-GBM calculations. Research-scale ensemble runs require the corresponding
-external network data and user-selected output paths.
+GBM calculations. Synthetic networks can be generated from the included fitted
+parameters; reconstructed-network analysis uses user-supplied network data.
 

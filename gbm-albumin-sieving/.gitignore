@@ -19,6 +19,10 @@ artifacts/
 *.out
 
 # Keep deliberately small fixtures even when they use ignored formats.
+!data/
+data/*
+!data/fitted_parameters/
+!data/fitted_parameters/**
 !tests/fixtures/**
 !examples/data/**
 !src/gbm_sieving/visualization/manuscript/**/frozen_data/**/*.xlsx

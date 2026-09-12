@@ -16,6 +16,8 @@ standalone 100-network demonstration is distributed separately.
   exclusion effective-radius analysis, and parameter-replacement experiments.
 - `src/gbm_sieving/data_io`: result schemas, unit-safe readers/writers, naming, and aggregation.
 - `workflows`: user-facing pipelines that connect the package modules.
+- `data/fitted_parameters`: published Phase 1 thickness and Phase 2 structural
+  parameters for synthetic WT and AS network generation.
 
 ## Naming policy
 
@@ -86,6 +88,19 @@ python workflows/simulate_fitted_networks.py --help
 python workflows/run_existing_network_dd2006.py --help
 ```
 
+To generate one WT and one AS demonstration network from the included fitted
+parameters, run:
+
+```text
+python workflows/simulate_fitted_networks.py --n-runs 1 --sample-types AS WT --seed 20260912 --run-result-dir outputs/generation_demo --no-retry-disconnected
+```
+
+This took approximately 60 seconds on the tested desktop. It creates the pore
+and throat workbooks below `outputs/generation_demo/phase3_synthetic/networks/`
+and transport summaries below `outputs/generation_demo/phase4_sieving/`. Exact
+expected values and output paths are documented in
+`examples/generation_2/README.md`.
+
 To use a new network, place `NAME_pores.xlsx` and `NAME_throats.xlsx` in
 `DATA/NAME`, generate the boundary and solvent-connectivity classifications,
 and then run the transport solver:
@@ -104,9 +119,10 @@ This command expects the five input workbooks documented in the README inside
 the GBM demo archive. Geometry changes require consistent regeneration of the
 boundary and solvent-connectivity classifications.
 
-Research-scale workflows require external input data; inspect each workflow's
-`--help` output and pass the corresponding input paths. All default generated
-outputs are written below `outputs/`, which is excluded from Git.
+Refitting the distributions and analyzing reconstructed experimental networks
+requires the corresponding input data. The included fitted parameters are
+sufficient for synthetic-network generation. All default generated outputs are
+written below `outputs/`, which is excluded from Git.
 
 Random seeds and small realized inputs for the principal 5,000-run, electrostatic
 exclusion-radius, and parameter-replacement experiments are versioned under

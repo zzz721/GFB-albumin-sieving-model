@@ -16,7 +16,11 @@ from its directory so outputs remain separated.
 ## Quick verification
 
 ```text
-cd sd-albumin-sieving
+cd gbm-albumin-sieving
+python -m pip install -e .
+python workflows/simulate_fitted_networks.py --n-runs 1 --sample-types AS WT --seed 20260912 --run-result-dir outputs/generation_demo --no-retry-disconnected
+
+cd ../sd-albumin-sieving
 python -m pip install -e .
 python workflows/calculate_sd_sieving.py
 
@@ -24,8 +28,13 @@ cd ../gfb-integration
 python workflows/run_gfb_model.py
 ```
 
+The GBM generation command creates one AS and one WT network from the included
+Phase 1 thickness and Phase 2 structural parameters. Its expected files and
+values are listed in
+`gbm-albumin-sieving/examples/generation_2/README.md`.
+
 The GBM software demonstration is provided separately as the GitHub Release
-asset [gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gbm-example-v1.0.0/gbm-demo-100.zip). It contains 50 WT and 50 AS networks and verifies both exclusion-radius conditions. See
+asset [gbm-demo-100.zip](https://github.com/zzz721/GFB-albumin-sieving-model/releases/download/gfb-model-v1.0.2/gbm-demo-100.zip). It contains 50 WT and 50 AS networks and verifies both exclusion-radius conditions. See
 `gbm-albumin-sieving/examples/demo_100/README.md` for instructions and expected
 outputs.
 
