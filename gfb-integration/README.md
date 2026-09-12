@@ -40,6 +40,19 @@ conditions use the final integrated GBM coefficients, the SD midpoint
 `0.4769089716`, the manuscript bulk dimensions, and the representative water
 flow used for the serial calculation.
 
+Expected coupled GFB sieving coefficients are:
+
+| Condition | Group | Expected sieving coefficient |
+|---|---|---:|
+| Steric only | WT | 0.0077722877 |
+| Steric only | AS | 0.0599583902 |
+| Electrostatic exclusion | WT | 0.0023905966 |
+| Electrostatic exclusion | AS | 0.0344768872 |
+
+The command writes `gfb_serial_results.csv` and `validation.json`. A successful
+run reports `all_passed: true`, identical common-flow columns for every layer,
+and a maximum absolute equation residual below `1e-12`.
+
 The output also reports the values obtained from the rounded Fig. 6F factors
 `1.0016 × 1.0008 × 0.48`. That column is retained as a figure-value comparison.
 The conservation model itself solves the layer concentrations and obtains the
@@ -51,7 +64,11 @@ Edit or replace `data/manuscript_conditions.csv` to evaluate other effective
 GBM or SD coefficients. Each row must provide the common water flow, both bulk
 geometries, albumin diffusion coefficient, `S_GBM`, and `S_SD`.
 
+The supplied rows use the effective GBM coefficients from the full
+5,000-network-per-group manuscript ensemble. The 100-network Release asset and
+the two-network generation example are software demonstrations with their own
+reported GBM results.
+
 This integration module consumes effective GBM and SD sieving coefficients. It
 does not rerun the pore-network solver or SD orientation geometry internally.
-Their source calculations remain in the neighboring packages. The repository-
-level manuscript map records the provenance of the default values.
+Their source calculations are provided in the neighboring packages.

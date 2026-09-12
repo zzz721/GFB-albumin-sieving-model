@@ -30,3 +30,8 @@ outputs/generation_demo/phase4_sieving/sieving_statistics.json
 With the tested dependency versions in `requirements-tested.txt`, the fixed
 seed produces the values in `expected_summary.csv`. Both rows should report
 `phase3_status=ok`, `phase4_status=ok`, and `Stable=Yes`.
+
+| Group | Thickness (nm) | Pores | Throats | Expected sieving coefficient |
+|---|---:|---:|---:|---:|
+| AS | 65.17479789 | 7,936 | 27,373 | 0.0561576053 |
+| WT | 63.43114408 | 6,667 | 20,851 | 0.0246281969 |

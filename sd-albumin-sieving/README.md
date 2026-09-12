@@ -17,9 +17,9 @@ Two workflows are provided:
 The default orientation calculation uses 5,000 uniform random SO(3)
 orientations per width with seed `20260804`, plus a deterministic principal-axis
 scan in 2-degree increments. The lower scenario is the random-orientation mean.
-The upper scenario is the largest value among sampled orientations; it is a
-sampled best-passage scenario rather than a proof of the global continuous-
-orientation maximum.
+The upper scenario is the largest value evaluated across the random orientations
+and deterministic scan; it is a finite-grid best-passage scenario rather than a
+proof of the global continuous-orientation maximum.
 
 ## System requirements and installation
 
@@ -103,5 +103,5 @@ python workflows/plot_fig3G.py
 python workflows/plot_figS12.py
 ```
 
-The historical `FigS12` filename is retained for traceability. See the
-repository-level manuscript map for its current manuscript numbering.
+The historical `FigS12` filename is retained solely for compatibility with the
+saved plotting workflow.

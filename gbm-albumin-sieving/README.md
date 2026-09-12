@@ -31,7 +31,7 @@ Examples:
 - `synthetic_WT_run0001__sieving_summary__radius-4p25nm.xlsx`
 
 Result readers use the canonical names produced by this project. Intermediate Excel
-reader/writer pairs will be renamed together so the pipeline always remains consistent.
+reader/writer pairs use the same canonical names throughout the pipeline.
 
 ## Unit policy
 
@@ -69,6 +69,14 @@ field is solved repeatedly until no further cluster can be safely removed (up to
 See `docs/FILE_GUIDE.md` for a description of every file.
 
 ## Local setup and checks
+
+For normal use:
+
+```text
+python -m pip install -e .
+```
+
+To install the additional development and test tools:
 
 ```text
 python -m pip install -e ".[dev]"
@@ -127,12 +135,6 @@ written below `outputs/`, which is excluded from Git.
 Random seeds and small realized inputs for the principal 5,000-run, electrostatic
 exclusion-radius, and parameter-replacement experiments are versioned under
 `configs/reproducibility/`.
-
-The repository-level manuscript map records which final figure inputs and
-plotting workflows still need to be migrated.
-
-The public real-network workflow excludes the earlier iterative validation
-solver and the separate whole-sample (`overall_*`) branch.
 
 ## Demonstration data
 

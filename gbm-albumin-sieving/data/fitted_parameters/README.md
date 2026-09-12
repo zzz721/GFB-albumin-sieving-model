@@ -9,9 +9,10 @@ pore-throat networks.
 - `phase2_parameters/` contains the fitted thickness-dependent structural
   relations used to sample pore and throat properties.
 
-The workflow uses these directories automatically when project-local fitted
-results are unavailable. The files are a compact publication set of fitted
-parameters; the fitting code is under `src/gbm_sieving/analysis/`.
+In a clean source checkout, the workflow finds these directories automatically;
+no separate Phase 1 or Phase 2 path is needed. The files are a compact
+publication set of fitted parameters; the fitting code is under
+`src/gbm_sieving/analysis/`.
 
 To generate one WT and one AS demonstration network, follow
 `examples/generation_2/README.md`.
